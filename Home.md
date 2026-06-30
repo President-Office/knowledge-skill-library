@@ -33,6 +33,7 @@ updated: 2026-06-30
 - [[04-comparisons/ruoyi-vue-pro-vs-erpnext|RuoYi/Yudao 与 ERPNext 对比]]
 - [[04-comparisons/admin-scaffold-comparison|后台脚手架对比]]
 - [[04-comparisons/database-first-admin-platforms|后台/CMS/API 平台对比]]
+- [[04-comparisons/pairwise-backend-comparisons|后端项目一对一对比]]
 
 ## 写作约定
 

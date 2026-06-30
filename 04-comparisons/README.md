@@ -16,3 +16,4 @@
 | RuoYi/Yudao 与 ERPNext 对比 | `zhijiantianya/ruoyi-vue-pro`、`frappe/erpnext` | 草稿 | [[04-comparisons/ruoyi-vue-pro-vs-erpnext|ruoyi-vue-pro-vs-erpnext]] |
 | 后台脚手架对比 | `zhijiantianya/ruoyi-vue-pro`、`jeecgboot/JeecgBoot`、`flipped-aurora/gin-vue-admin` | 草稿 | [[04-comparisons/admin-scaffold-comparison|admin-scaffold-comparison]] |
 | 后台/CMS/API 平台对比 | `directus/directus`、`payloadcms/payload`，后续补 `Strapi`、`Supabase` | 草稿 | [[04-comparisons/database-first-admin-platforms|database-first-admin-platforms]] |
+| 后端项目一对一对比 | 当前已收录 6 个后台/后端/后台平台项目 | 草稿 | [[04-comparisons/pairwise-backend-comparisons|pairwise-backend-comparisons]] |
