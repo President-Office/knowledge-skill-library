@@ -1,135 +1,83 @@
 # Knowledge Skill Library
 
-这个仓库用来保存我对不同项目、框架、工具和技术方案的对比知识，方便以后快速回顾、理解和决策。
+这个知识库用于系统学习 GitHub 上的开源项目，并把阅读源码、运行实践、架构判断和可复用经验沉淀下来。
 
-它的核心作用不是记录某个项目当前进度，也不是替代具体项目的 README，而是沉淀“我为什么这样选、这些项目有什么差异、各自适合什么场景、以后再遇到类似问题应该参考什么”。
+它不是聊天记录归档，也不是某个项目的临时进度看板。这里保存的是经过整理后能长期复用的知识：一个项目为什么值得学、源码怎么读、架构如何拆、和同类项目相比差异是什么、以后遇到类似问题可以复用什么方法。
 
-## 这个仓库是做什么的
+## 快速入口
 
-我会把一些项目对比、技术选型、框架研究、业务方案比较和 AI/Agent 方法总结放在这里，例如：
+- [[Home|Home]]
+- [[00-inbox/README|00-inbox]]：临时收集入口，先放链接、想法和待整理资料。
+- [[01-projects/README|01-projects]]：每个开源项目一张主卡，记录定位、学习目标、仓库结构、关键模块和结论。
+- [[02-reading-notes/README|02-reading-notes]]：源码阅读笔记，按模块、调用链、PR、Issue 或功能点拆分。
+- [[03-patterns/README|03-patterns]]：从项目中抽出的通用工程模式、架构模式、代码组织方式。
+- [[04-comparisons/README|04-comparisons]]：同类项目横向对比，用于技术选型和判断优先级。
+- [[05-practice-labs/README|05-practice-labs]]：本地运行、改造实验、最小复现和二次开发记录。
+- [[06-glossary/README|06-glossary]]：术语、概念、缩写、项目内黑话。
+- [[_templates/github-project-intake|项目录入模板]]
+- [[_templates/weekly-open-source-learning|周报模板]]
 
-- ERPNext 和 RuoYi / Yudao 在业务后台、财务、流程、扩展方式上的差异。
-- RuoYi-Vue-Pro / Yudao 生态中 clone-bot、codegen-bot、业务后台仓库之间的关系。
-- 不同 AI Agent skill / prompt / workflow 方法的比较和总结。
-- Java、建模、代码生成、项目规划等长期可复用经验。
-- 某个业务方向中多个实现方案的优缺点、适用场景和后续判断依据。
+## 学习一个开源项目的流程
 
-这些内容的目标是：
+1. 在 [[00-inbox/README|Inbox]] 放入 GitHub 链接和初步动机。
+2. 用 `01-projects/_template-open-source-project.md` 建立项目主卡。
+3. 先读 `README`、官方文档、目录结构、启动方式和核心配置。
+4. 在 [[02-reading-notes/README|Reading Notes]] 记录关键模块的源码阅读过程。
+5. 在 [[05-practice-labs/README|Practice Labs]] 记录本地运行、调试、改造和验证结果。
+6. 把可迁移的做法提炼到 [[03-patterns/README|Patterns]]。
+7. 如果涉及选型，把项目放进 [[04-comparisons/README|Comparisons]] 和同类项目比较。
+8. 更新相关 README 索引，保证以后能快速找回。
 
-1. 帮我自己快速恢复上下文。
-2. 避免重复研究同一类项目和工具。
-3. 为后续项目选型提供依据。
-4. 给 AI Agent 提供更稳定的背景知识。
-5. 把零散讨论沉淀成可搜索、可复用的知识。
+## Obsidian 约定
 
-## 不是什么
-
-本仓库不是：
-
-- 某个具体业务项目的代码仓库。
-- 某个产品的实时项目管理看板。
-- Issue / PR / 部署状态记录库。
-- 聊天记录归档库。
-- 存放密钥、服务器信息、客户隐私或未授权资料的地方。
-
-具体项目的当前进度、部署方式、Issue、PR、代码说明，应放在对应项目仓库里。这里主要保存经过提炼后的对比知识和长期判断。
-
-## 目录结构
-
-```text
-knowledge-skill-library/
-├── README.md                         # 本仓库说明
-├── knowledge/                        # 项目对比、技术选型、业务理解和长期知识
-│   ├── README.md                     # Knowledge 索引
-│   ├── ai-development/               # AI 开发、Agent 方法论
-│   ├── java/                         # Java / 生命周期 / 建模实践
-│   ├── model-cards/                  # 模型卡与需求表达样例
-│   └── ruoyi-vue-pro/                # RuoYi/Yudao 相关对比与复用知识
-├── skills/                           # 可复用技能、模板、检查清单
-│   ├── README.md                     # Skill 索引
-│   ├── project-planning/             # 项目规划、模型卡、技能结构
-│   └── skill-sources/                # 外部工程技能模式整理
-├── docs/                             # 主题性综合文档
-└── *.json / *.xlsx / *.md            # 待整理原始资料或历史资料
-```
-
-## 内容应该怎么放
-
-### 放到 `knowledge/`
-
-适合保存“我知道了什么 / 我怎么判断”：
-
-- 项目 A vs 项目 B 的对比。
-- 框架、工具、平台的适用场景。
-- 技术选型结论。
-- 业务方案比较。
-- 架构复用经验。
-- 项目复盘后形成的长期知识。
-
-### 放到 `skills/`
-
-适合保存“以后怎么做”：
-
-- Agent 工作流程。
-- 提示词结构。
-- 检查清单。
-- 模型卡模板。
-- 可复用的项目规划方法。
-
-### 放到 `docs/`
-
-适合保存某个主题的连续说明：
-
-- 一个业务方向的整体规划。
-- 多篇知识的整合版。
-- 需要按章节阅读的综合文档。
+1. 内部链接统一使用 Obsidian wikilink，格式为“目录/文件名 + 显示名”。
+2. 不使用 `../../` 形式的相对路径。
+3. 索引页优先链接到 `README`，项目页优先链接到主卡。
+4. 新项目、阅读笔记、对比文档都要同步更新索引。
 
 ## 写入原则
 
-新增内容时优先遵守：
+1. 结论优先：不要只摘抄资料，要写出自己的判断。
+2. 证据清楚：重要结论标明来源，是源码、文档、Issue、运行结果还是推断。
+3. 项目事实回项目卡：具体项目的结构、命令、模块放在 `01-projects/` 或 `02-reading-notes/`。
+4. 可复用经验进模式库：跨项目有用的架构、代码和流程经验放进 `03-patterns/`。
+5. 对比单独沉淀：选型、竞品、技术路线比较放进 `04-comparisons/`。
+6. 敏感信息不入库：不保存 token、密码、客户隐私、服务器凭据和未授权资料。
 
-1. **对比优先**：尽量写清楚“和谁比、差异是什么、适合什么场景”。
-2. **结论优先**：不要只堆资料，要写出自己的判断。
-3. **来源清楚**：说明知识来自项目实践、外部文档、代码阅读、AI 总结还是人工判断。
-4. **长期可用**：短期进度不要放这里，稳定判断才放这里。
-5. **项目事实回项目仓库**：具体项目当前状态、部署、Issue、PR 留在对应项目。
-6. **敏感信息不入库**：不保存 token、密码、服务器凭据、客户隐私和未授权数据。
-7. **索引要更新**：新增重要知识后，同步更新 `knowledge/README.md` 或 `skills/README.md`。
+## 推荐命名
 
-## 当前快速入口
-
-### Knowledge
-
-见 `knowledge/README.md`。
-
-已有内容包括：
-
-- AI 开发与 Agent 技能总结。
-- Java 生命周期与建模实践。
-- RuoYi-Vue-Pro / Yudao 相关知识。
-- 多语言站点模型卡。
-- 仓库定位与知识库组织方式说明。
-
-### Skills
-
-见 `skills/README.md`。
-
-已有内容包括：
-
-- 项目技能体系结构。
-- 需求模型卡模板。
-- 工程技能模式整理。
-
-## 和其他仓库的关系
-
-- `ai-project-operating-system`：定义 AI 项目如何用 GitHub、Issue、PR、Spec、ADR、Harness、CI 来运转。
-- `knowledge-skill-library`：保存项目对比、技术选型、业务理解和可复用技能，帮助自己和 AI 更快理解项目。
-- 具体业务仓库：保存该业务的代码、需求、部署、运行状态和业务专属文档。
-
-简单说：
+项目主卡：
 
 ```text
-项目怎么运转        → ai-project-operating-system
-我对项目怎么理解    → knowledge-skill-library
-项目实际代码和状态  → 具体项目仓库
+01-projects/<owner>--<repo>.md
 ```
+
+源码阅读笔记：
+
+```text
+02-reading-notes/<owner>--<repo>/<module-or-topic>.md
+```
+
+模式总结：
+
+```text
+03-patterns/<domain>/<pattern-name>.md
+```
+
+对比文档：
+
+```text
+04-comparisons/<topic>-comparison.md
+```
+
+实践记录：
+
+```text
+05-practice-labs/<owner>--<repo>/<experiment>.md
+```
+
+## 当前任务
+
+- 先把这个库建设成开源项目学习的稳定容器。
+- 每次选择一个 GitHub 项目，按模板建立项目卡。
+- 学完一个模块后，至少沉淀一条源码阅读笔记或模式总结。
