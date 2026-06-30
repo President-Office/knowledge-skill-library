@@ -2,6 +2,10 @@
 
 Reusable project knowledge collected from planning, research, and AI-assisted development work.
 
+## Repository / Knowledge Organization
+
+- [Knowledge Skill Library positioning notes](project-knowledge-library-positioning.md)
+
 ## Java And Modeling
 
 - [Java lifecycle and mathematical modeling practices](java/java-lifecycle-modeling-github-practices.md)

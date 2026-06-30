@@ -1,171 +1,135 @@
 # Knowledge Skill Library
 
-本仓库是 President-Office 的知识与技能资产库，用于沉淀可复用的业务知识、工程方法、Agent skills、项目规划模板和研究结论。
+这个仓库用来保存我对不同项目、框架、工具和技术方案的对比知识，方便以后快速回顾、理解和决策。
 
-它不是单个业务项目的 README，也不是某一次技术选型笔记。具体项目、具体仓库、具体产品的操作说明应放在对应项目仓库；本仓库只保留可跨项目复用、值得长期沉淀的知识与方法。
+它的核心作用不是记录某个项目当前进度，也不是替代具体项目的 README，而是沉淀“我为什么这样选、这些项目有什么差异、各自适合什么场景、以后再遇到类似问题应该参考什么”。
 
-## 仓库定位
+## 这个仓库是做什么的
 
-本仓库承载三类长期资产：
+我会把一些项目对比、技术选型、框架研究、业务方案比较和 AI/Agent 方法总结放在这里，例如：
 
-1. **Knowledge**：可复用知识、研究摘要、技术判断、业务建模经验、项目复盘结论。
-2. **Skills**：可复用的 Agent/Codex/Hermes 工作方法、提示结构、检查清单、模型卡模板。
-3. **Project Planning Assets**：项目规划、需求拆解、模型卡、技能结构和跨项目方法论。
+- ERPNext 和 RuoYi / Yudao 在业务后台、财务、流程、扩展方式上的差异。
+- RuoYi-Vue-Pro / Yudao 生态中 clone-bot、codegen-bot、业务后台仓库之间的关系。
+- 不同 AI Agent skill / prompt / workflow 方法的比较和总结。
+- Java、建模、代码生成、项目规划等长期可复用经验。
+- 某个业务方向中多个实现方案的优缺点、适用场景和后续判断依据。
 
-不适合放在这里的内容：
+这些内容的目标是：
 
-- 单个项目的当前进度。
-- 某个 Issue / PR 的临时状态。
-- 生产密钥、账号、服务器信息。
-- 未提炼的聊天记录。
-- 只对一个仓库有效、不能复用的操作细节。
+1. 帮我自己快速恢复上下文。
+2. 避免重复研究同一类项目和工具。
+3. 为后续项目选型提供依据。
+4. 给 AI Agent 提供更稳定的背景知识。
+5. 把零散讨论沉淀成可搜索、可复用的知识。
+
+## 不是什么
+
+本仓库不是：
+
+- 某个具体业务项目的代码仓库。
+- 某个产品的实时项目管理看板。
+- Issue / PR / 部署状态记录库。
+- 聊天记录归档库。
+- 存放密钥、服务器信息、客户隐私或未授权资料的地方。
+
+具体项目的当前进度、部署方式、Issue、PR、代码说明，应放在对应项目仓库里。这里主要保存经过提炼后的对比知识和长期判断。
 
 ## 目录结构
 
 ```text
 knowledge-skill-library/
-├── README.md                         # 本仓库说明与使用规则
-├── knowledge/                        # 可复用知识库
+├── README.md                         # 本仓库说明
+├── knowledge/                        # 项目对比、技术选型、业务理解和长期知识
 │   ├── README.md                     # Knowledge 索引
 │   ├── ai-development/               # AI 开发、Agent 方法论
 │   ├── java/                         # Java / 生命周期 / 建模实践
 │   ├── model-cards/                  # 模型卡与需求表达样例
-│   └── ruoyi-vue-pro/                # RuoYi/Yudao 相关复用知识
-├── skills/                           # 可复用技能库
+│   └── ruoyi-vue-pro/                # RuoYi/Yudao 相关对比与复用知识
+├── skills/                           # 可复用技能、模板、检查清单
 │   ├── README.md                     # Skill 索引
 │   ├── project-planning/             # 项目规划、模型卡、技能结构
 │   └── skill-sources/                # 外部工程技能模式整理
-├── docs/                             # 面向具体主题的综合文档
-└── *.json / *.xlsx / *.md            # 待归档或原始资料
+├── docs/                             # 主题性综合文档
+└── *.json / *.xlsx / *.md            # 待整理原始资料或历史资料
 ```
 
-## 快速入口
+## 内容应该怎么放
 
-### Knowledge Library
+### 放到 `knowledge/`
+
+适合保存“我知道了什么 / 我怎么判断”：
+
+- 项目 A vs 项目 B 的对比。
+- 框架、工具、平台的适用场景。
+- 技术选型结论。
+- 业务方案比较。
+- 架构复用经验。
+- 项目复盘后形成的长期知识。
+
+### 放到 `skills/`
+
+适合保存“以后怎么做”：
+
+- Agent 工作流程。
+- 提示词结构。
+- 检查清单。
+- 模型卡模板。
+- 可复用的项目规划方法。
+
+### 放到 `docs/`
+
+适合保存某个主题的连续说明：
+
+- 一个业务方向的整体规划。
+- 多篇知识的整合版。
+- 需要按章节阅读的综合文档。
+
+## 写入原则
+
+新增内容时优先遵守：
+
+1. **对比优先**：尽量写清楚“和谁比、差异是什么、适合什么场景”。
+2. **结论优先**：不要只堆资料，要写出自己的判断。
+3. **来源清楚**：说明知识来自项目实践、外部文档、代码阅读、AI 总结还是人工判断。
+4. **长期可用**：短期进度不要放这里，稳定判断才放这里。
+5. **项目事实回项目仓库**：具体项目当前状态、部署、Issue、PR 留在对应项目。
+6. **敏感信息不入库**：不保存 token、密码、服务器凭据、客户隐私和未授权数据。
+7. **索引要更新**：新增重要知识后，同步更新 `knowledge/README.md` 或 `skills/README.md`。
+
+## 当前快速入口
+
+### Knowledge
 
 见 `knowledge/README.md`。
 
-当前包含：
+已有内容包括：
 
 - AI 开发与 Agent 技能总结。
-- Java 生命周期与数学建模实践。
-- RuoYi-Vue-Pro / Yudao 复用设计。
+- Java 生命周期与建模实践。
+- RuoYi-Vue-Pro / Yudao 相关知识。
 - 多语言站点模型卡。
+- 仓库定位与知识库组织方式说明。
 
-### Skill Library
+### Skills
 
 见 `skills/README.md`。
 
-当前包含：
+已有内容包括：
 
 - 项目技能体系结构。
 - 需求模型卡模板。
 - 工程技能模式整理。
 
-### 主题文档
+## 和其他仓库的关系
 
-当前 `docs/` 中包含：
+- `ai-project-operating-system`：定义 AI 项目如何用 GitHub、Issue、PR、Spec、ADR、Harness、CI 来运转。
+- `knowledge-skill-library`：保存项目对比、技术选型、业务理解和可复用技能，帮助自己和 AI 更快理解项目。
+- 具体业务仓库：保存该业务的代码、需求、部署、运行状态和业务专属文档。
 
-- `docs/main-job-ai-platform.md`：主业 AI 平台相关规划沉淀。
-
-## 内容分层规则
-
-### Knowledge：保存“知道什么”
-
-适合放入 `knowledge/`：
-
-- 技术或业务判断的长期结论。
-- 多项目可复用的研究摘要。
-- 架构、建模、产品、业务流程的经验总结。
-- 对外部项目、框架、工具的评估结论。
-
-示例：
-
-- `knowledge/java/java-lifecycle-modeling-github-practices.md`
-- `knowledge/ruoyi-vue-pro/ticket-mall-reuse-design.md`
-
-### Skills：保存“怎么做”
-
-适合放入 `skills/`：
-
-- Agent 执行流程。
-- 提示模板。
-- 检查清单。
-- 可复用的建模步骤。
-- 可迁移到 Hermes / Codex skill 的结构化方法。
-
-示例：
-
-- `skills/project-planning/project-skills-structure.md`
-- `skills/project-planning/model-card-template.md`
-
-### Docs：保存“某个主题的成体系说明”
-
-适合放入 `docs/`：
-
-- 跨多个知识条目的主题性总结。
-- 业务方向规划。
-- 需要连续阅读的综合文档。
-
-## 写入原则
-
-新增内容前先判断它属于哪一类：
+简单说：
 
 ```text
-事实 / 研究 / 判断       → knowledge/
-流程 / 方法 / 模板       → skills/
-主题规划 / 综合说明      → docs/
-原始资料 / 待整理数据    → 暂存根目录或后续归档
+项目怎么运转        → ai-project-operating-system
+我对项目怎么理解    → knowledge-skill-library
+项目实际代码和状态  → 具体项目仓库
 ```
-
-写入时遵守：
-
-1. **先提炼再沉淀**：不要把聊天流水账原样放进仓库。
-2. **长期有效优先**：能在多个项目复用的内容优先进入本库。
-3. **项目事实回项目仓库**：具体项目当前状态、Issue、PR、部署说明应放回对应项目。
-4. **方法可迁移**：流程类内容应尽量整理成可迁移的 skill、模板或检查清单。
-5. **敏感信息禁止入库**：不得写入 token、密码、服务器凭据、客户隐私和未授权数据。
-6. **索引同步更新**：新增 `knowledge/` 或 `skills/` 内容时，同步更新对应目录的 `README.md`。
-
-## 推荐工作流
-
-### 沉淀一条知识
-
-1. 明确知识来源：讨论、研究、项目复盘、外部文档或代码实践。
-2. 提炼长期结论，去掉临时过程。
-3. 判断归档位置：`knowledge/`、`skills/` 或 `docs/`。
-4. 写入 Markdown，并补充适用范围、限制和引用来源。
-5. 更新对应索引。
-
-### 沉淀一个 Skill
-
-1. 识别高频、易错、需要一致执行的流程。
-2. 写清触发场景、输入、步骤、输出、检查清单和反模式。
-3. 把长资料放到 `references/` 或 `knowledge/`，不要塞进单个 skill 说明。
-4. 如果要安装到 Hermes/Codex，再迁移为对应工具要求的 `SKILL.md` 结构。
-
-### 归档一次项目经验
-
-1. 项目当前状态留在项目仓库。
-2. 只把跨项目可复用的方法、判断、模板沉淀到本仓库。
-3. 如果是业务专属知识，优先考虑放入对应业务 Organization 的 `knowledge-base` 或 `skills-library`。
-4. 只有跨业务可复用时，再上提到本仓库。
-
-## 与其他仓库的边界
-
-- `ai-project-operating-system`：定义 GitHub-first 的 AI 项目操作系统、Issue/PR/Spec/ADR/Harness/CI 流程。
-- `knowledge-skill-library`：沉淀跨项目可复用的知识与技能资产。
-- 具体业务仓库：保存该业务的代码、需求、部署、运行状态和业务专属知识。
-- 业务 `knowledge-base` / `skills-library`：保存某个业务单元自己的知识和技能；成熟后再上提公共内容。
-
-## 当前待整理项
-
-根目录仍存在一些历史资料和原始文件，例如：
-
-- `erpnext-vs-ruoyi-vue-pro-influencer-admin.md`
-- `gaokao-skills-summary.md`
-- `insurance-skills-and-rag-summary.xlsx`
-- `mysql-projects.json`
-- `projects.json`
-
-这些内容可以后续按主题迁移到 `knowledge/`、`skills/` 或 `docs/`，并在迁移时更新索引。
