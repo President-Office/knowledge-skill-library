@@ -1,4 +1,4 @@
----
+﻿---
 type: source-reading
 status: initial
 project: yudaocode/yudao-ui-admin-vue3
@@ -9,8 +9,8 @@ updated: 2026-07-02
 
 # yudao-ui-admin-vue3 - 前端业务模块地图
 
-项目主卡：[[01-projects/yudaocode--yudao-ui-admin-vue3|yudaocode/yudao-ui-admin-vue3]]
-特点卡：[[03-patterns/framework-characteristics/yudao-ui-admin-vue3|yudao-ui-admin-vue3 特点]]
+项目主卡：[[yudaocode--yudao-ui-admin-vue3]]
+特点卡：[[yudao-ui-admin-vue3]]
 
 ## 阅读目标
 
@@ -38,7 +38,7 @@ updated: 2026-07-02
 
 - 后端模块通常能在 `src/api/<module>` 和 `src/views/<module>` 找到对应入口。
 - 权限和菜单通常要结合 `src/permission.ts`、路由和后端菜单接口一起读。
-- 和 [[03-patterns/framework-characteristics/yudao-ui-admin-vben|yudao-ui-admin-vben]] 相比，它的平台抽象少，但业务落地更直接。
+- 和 [[yudao-ui-admin-vben]] 相比，它的平台抽象少，但业务落地更直接。
 
 ## 读源码时要验证的问题
 
@@ -49,7 +49,7 @@ updated: 2026-07-02
 
 ## Obsidian 关联
 
-- Vben 对照：[[02-reading-notes/yudaocode--yudao-ui-admin-vben/monorepo-frontend-map|yudao-ui-admin-vben - Monorepo 前端地图]]
-- 前端对比：[[04-comparisons/yudao-ui-admin-vue3-vs-vben|yudao-ui-admin-vue3 与 yudao-ui-admin-vben 对比]]
-- 后端项目：[[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya/ruoyi-vue-pro]]
-
+- 底层概念：[[boundaries]]、[[abstractions]]
+- Vben 对照：[[monorepo-frontend-map]]
+- 前端对比：[[yudao-ui-admin-vue3-vs-vben]]
+- 后端项目：[[zhijiantianya--ruoyi-vue-pro]]

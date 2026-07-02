@@ -1,4 +1,4 @@
----
+﻿---
 type: open-source-project
 status: active
 source: gitee
@@ -24,39 +24,18 @@ updated: 2026-07-01
 - 它保留了 Yudao/RuoYi 的后台业务模块：系统、基础设施、会员、支付、商城、ERP、CRM、BPM、报表、IoT、MES、WMS、IM 等，便于和单体版逐项对照。
 - 它适合作为“Java 后台从单体到微服务”的源码阅读样本，而不是单独从零读起。
 
-## 当前快照
-
-查询日期：2026-07-01
-
-| 项 | 内容 |
-| --- | --- |
-| 仓库 | https://gitee.com/zhijiantianya/yudao-cloud |
-| 平台 | Gitee |
-| 所属 | 芋道源码 |
-| 分类 | Java 企业后台 / Spring Cloud 微服务 |
-| License | MIT |
-| 默认分支 | `master` |
-| 当前主干提交 | `74a41cffb5ef4535d2057b62f4e7ef587bee790b` |
-| 远程分支 | `develop`、`master`、`master-jdk17`、`master-jdk25` |
-| 当前版本标签 | `v2026.06(jdk8/11)`、`v2026.06(jdk17/21)`、`v2026.06(jdk25)` |
-| `master` 基线 | JDK 8 / 11、Spring Boot 2.7.18、Spring Cloud 2021.0.9 |
-| `master-jdk17` 基线 | JDK 17 / 21、Spring Boot 3.5 |
-| `master-jdk25` 基线 | JDK 25、Spring Boot 4.x |
-
-注意：分支、提交和标签来自 2026-07-01 的远程引用校验；Star、Fork、Issue 等展示数字后续会变化，暂不写入主卡。
-
 ## 技术栈初判
 
 | 层次 | 技术 |
 | --- | --- |
-| 微服务基础 | Spring Cloud Alibaba、Nacos、Spring Cloud Gateway |
-| 服务治理 | Sentinel、Seata、XXL-Job |
-| 后端基础 | Spring Boot、MyBatis Plus、Redis、Redisson |
-| 消息 | Event、Redis、RabbitMQ、Kafka、RocketMQ |
-| 权限 | Spring Security、Token、Redis、多端认证、SSO |
-| 数据库 | MySQL、Oracle、PostgreSQL、SQL Server、MariaDB、DM、TiDB |
-| 业务能力 | SaaS 多租户、BPM、支付、商城、ERP、CRM、报表、IoT、MES、WMS、IM |
-| 前端 | Vue 管理端生态，和 Yudao 前端项目配合使用 |
+| 微服务基础 | [[Spring Cloud Alibaba]]、[[Nacos]]、[[Spring Cloud Gateway]] |
+| 服务治理 | [[Sentinel]]、[[Seata]]、[[XXL-Job]] |
+| 后端基础 | [[Spring Boot]]、[[MyBatis Plus]]、[[redis]]、[[Redisson]] |
+| 消息 | [[Event]]、[[redis]]、[[RabbitMQ]]、[[Kafka]]、[[RocketMQ]]、[[MQ]] |
+| 权限 | [[Spring Security]]、[[Token]]、[[redis]]、[[多端认证]]、[[SSO]] |
+| 数据库 | [[mysql]]、[[oracle-database]]、[[postgresql]]、[[sql-server]]、[[mariadb]]、[[dm-database]]、[[tidb]] |
+| 业务能力 | [[SaaS]] [[多租户]]、[[BPM]]、[[支付]]、[[Mall]]、[[erp]]、[[crm]]、[[报表]]、[[IoT]]、[[mes]]、[[WMS]]、[[IM]] |
+| 前端 | [[Vue]] 管理端生态，和 Yudao 前端项目配合使用 |
 
 ## 仓库模块入口
 
@@ -164,7 +143,7 @@ yudao-cloud/
 
 ## 相关笔记
 
-- [[02-reading-notes/zhijiantianya--yudao-cloud/README|源码阅读索引]]
-- [[05-practice-labs/zhijiantianya--yudao-cloud/local-setup|本地运行实验]]
-- [[04-comparisons/yudao-monolith-vs-cloud|Yudao 单体版与 Cloud 版对比]]
-- [[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya/ruoyi-vue-pro]]
+- [[02-reading-notes/zhijiantianya--yudao-cloud/README]]
+- [[05-practice-labs/zhijiantianya--yudao-cloud/local-setup]]
+- [[yudao-monolith-vs-cloud]]
+- [[zhijiantianya--ruoyi-vue-pro]]

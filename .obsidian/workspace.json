@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "fa7bd5d32f45a244",
+    "type": "split",
+    "children": [
+      {
+        "id": "31a34991ed22036f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "277cbdf944b2ff05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-projects/directus--directus.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "directus--directus"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3e25564f16ce2b9f",
+    "type": "split",
+    "children": [
+      {
+        "id": "7aa671f7257f8a2e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c49226d821a109ba",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "09ce262164325153",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "headless",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "40fc4aca66e5a7f6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "675faff399fa6e24",
+    "type": "split",
+    "children": [
+      {
+        "id": "3cb10d0798aa694b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da2ad22916a6b45b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "07-foundations/single-responsibility-principle.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "single-responsibility-principle 的反向链接列表"
+            }
+          },
+          {
+            "id": "082e8db37f9eef34",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "07-foundations/single-responsibility-principle.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "single-responsibility-principle 的出链列表"
+            }
+          },
+          {
+            "id": "6b8d0286ae4233c8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "20af7093480d05f2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "80321e60c28175f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "07-foundations/single-responsibility-principle.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "single-responsibility-principle 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "277cbdf944b2ff05",
+  "lastOpenFiles": [
+    "07-foundations/product-patterns/README.md",
+    "07-foundations/product-patterns/mp.md",
+    "07-foundations/product-patterns/iot.md",
+    "07-foundations/product-patterns/im.md",
+    "07-foundations/product-patterns/wms.md",
+    "07-foundations/product-patterns/member.md",
+    "07-foundations/product-patterns/mall.md",
+    "07-foundations/product-patterns/support.md",
+    "07-foundations/product-patterns/projects.md",
+    "07-foundations/product-patterns/manufacturing.md",
+    "07-foundations/product-patterns/selling.md",
+    "07-foundations/product-patterns/buying.md",
+    "07-foundations/product-patterns/stock.md",
+    "07-foundations/product-patterns/accounting.md",
+    "07-foundations/technology-stacks/AI.md",
+    "07-foundations/technology-stacks/支付.md",
+    "07-foundations/technology-stacks/三方登录.md",
+    "07-foundations/technology-stacks/Monorepo Package.md",
+    "07-foundations/technology-stacks/多端认证.md",
+    "07-foundations/technology-stacks/Event.md",
+    "07-foundations/technology-stacks/MQ.md",
+    "07-foundations/technology-stacks/Stripe.md",
+    "07-foundations/technology-stacks/SEO.md",
+    "07-foundations/technology-stacks/Search.md",
+    "07-foundations/technology-stacks/Import Export.md",
+    "07-foundations/technology-stacks/Form Builder.md",
+    "07-foundations/technology-stacks",
+    "07-foundations/data/databases",
+    "07-foundations/product-patterns",
+    "07-foundations/engineering",
+    "07-foundations/data",
+    "07-foundations/oop",
+    "07-foundations/design-principles",
+    "07-foundations/architecture",
+    "requirements/docs",
+    "requirements"
+  ]
+}

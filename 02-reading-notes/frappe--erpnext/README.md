@@ -1,13 +1,13 @@
-# ERPNext 源码阅读索引
+﻿# ERPNext 源码阅读索引
 
-项目主卡：[[01-projects/frappe--erpnext|frappe/erpnext]]
-特点卡：[[03-patterns/framework-characteristics/erpnext|ERPNext 特点]]
+项目主卡：[[frappe--erpnext]]
+特点卡：[[erpnext]]
 
 ## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | Frappe app 结构 | 初稿 | [[02-reading-notes/frappe--erpnext/frappe-app-structure|frappe-app-structure]] |
+| 1 | Frappe app 结构 | 初稿 | [[frappe-app-structure]] |
 
 ## 后续主题
 

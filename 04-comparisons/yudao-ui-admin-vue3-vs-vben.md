@@ -1,10 +1,9 @@
----
+﻿---
 type: comparison
 status: draft
 projects: [yudaocode/yudao-ui-admin-vue3, yudaocode/yudao-ui-admin-vben]
 created: 2026-07-01
 updated: 2026-07-01
-source_checked: 2026-07-01
 tags: [yudao, ruoyi, vue3, vben, admin, frontend]
 ---
 
@@ -20,8 +19,8 @@ tags: [yudao, ruoyi, vue3, vben, admin, frontend]
 
 先分别阅读两个项目主卡，再看本文的选型判断：
 
-- [[01-projects/yudaocode--yudao-ui-admin-vue3|yudaocode/yudao-ui-admin-vue3]]：芋道 Vue3 管理后台前端，单应用结构，偏业务快速二开。
-- [[01-projects/yudaocode--yudao-ui-admin-vben|yudaocode/yudao-ui-admin-vben]]：基于 Vben Admin 5 的多 UI monorepo，偏长期平台化后台前端底座。
+- [[yudaocode--yudao-ui-admin-vue3]]：芋道 Vue3 管理后台前端，单应用结构，偏业务快速二开。
+- [[yudaocode--yudao-ui-admin-vben]]：基于 Vben Admin 5 的多 UI monorepo，偏长期平台化后台前端底座。
 
 ## 关键差异
 
@@ -52,13 +51,11 @@ tags: [yudao, ruoyi, vue3, vben, admin, frontend]
 - **集团统一后台前端底座**：可以单独开 spike 评估 `yudao-ui-admin-vben`，重点验证权限、菜单、代码生成页面迁移、构建产物和 CI/CD。
 - **不要混用决策**：业务仓库优先服务交付速度；平台底座评估可以另起试验，不要阻塞当前业务页面落地。
 
-## 证据
+## 结构证据
 
-- 查询日期：2026-07-01。
-- `yudao-ui-admin-vue3` 的 `package.json`：`name` 为 `yudao-ui-admin-vue3`，版本为 `2026.06-snapshot`，依赖包含 `vue`、`vite`、`typescript`、`element-plus`、`pinia`、`vue-router`、`unocss`。
-- `yudao-ui-admin-vue3` 目录：根目录包含 `src/`，业务模块位于 `src/views/`，包含 `system`、`infra`、`mall`、`erp`、`crm`、`bpm` 等。
-- `yudao-ui-admin-vben` 的 `package.json`：`name` 为 `vben-admin-monorepo`，版本为 `5.7.0`，脚本包含 `build:antd`、`build:ele`、`build:naive`、`build:tdesign` 等。
-- `yudao-ui-admin-vben` 目录：根目录包含 `apps/`、`packages/`、`internal/`、`turbo.json`、`pnpm-workspace.yaml`；`apps/` 下包含 `web-ele`、`web-antd`、`web-naive`、`web-tdesign`、`web-antdv-next`。
+- `yudao-ui-admin-vue3` 是单应用结构，根目录包含 `src/`，业务模块位于 `src/views/`，包含 `system`、`infra`、`mall`、`erp`、`crm`、`bpm` 等。
+- `yudao-ui-admin-vben` 是 monorepo 结构，根目录包含 `apps/`、`packages/`、`internal/`、`turbo.json`、`pnpm-workspace.yaml`；`apps/` 下包含多个 UI 应用入口。
+- 两者都能承接 Yudao/RuoYi 业务模块，但 `vue3` 更偏单应用业务交付，`vben` 更偏平台化前端底座。
 
 ## 后续动作
 
@@ -68,7 +65,7 @@ tags: [yudao, ruoyi, vue3, vben, admin, frontend]
 
 ## 相关笔记
 
-- [[01-projects/yudaocode--yudao-ui-admin-vue3|yudaocode/yudao-ui-admin-vue3]]
-- [[01-projects/yudaocode--yudao-ui-admin-vben|yudaocode/yudao-ui-admin-vben]]
-- [[04-comparisons/admin-scaffold-comparison|后台脚手架对比]]
-- [[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya/ruoyi-vue-pro]]
+- [[yudaocode--yudao-ui-admin-vue3]]
+- [[yudaocode--yudao-ui-admin-vben]]
+- [[admin-scaffold-comparison]]
+- [[zhijiantianya--ruoyi-vue-pro]]

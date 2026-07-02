@@ -1,4 +1,4 @@
----
+﻿---
 type: source-reading
 status: initial
 project: jeecgboot/JeecgBoot
@@ -9,8 +9,8 @@ updated: 2026-07-02
 
 # JeecgBoot - Maven 多模块结构
 
-项目主卡：[[01-projects/jeecgboot--JeecgBoot|jeecgboot/JeecgBoot]]
-特点卡：[[03-patterns/framework-characteristics/jeecgboot|JeecgBoot 特点]]
+项目主卡：[[jeecgboot--JeecgBoot]]
+特点卡：[[jeecgboot]]
 
 ## 阅读目标
 
@@ -31,7 +31,7 @@ updated: 2026-07-02
 
 ## 初步判断
 
-JeecgBoot 和 [[03-patterns/framework-characteristics/ruoyi-vue-pro|RuoYi/Yudao]] 都是国内 Java 后台平台，但学习重点不同：
+JeecgBoot 和 [[ruoyi-vue-pro]] 都是国内 Java 后台平台，但学习重点不同：
 
 - RuoYi/Yudao 更适合作为企业后台和业务中台样本。
 - JeecgBoot 更适合研究低代码、在线表单、报表、流程、AI Skills 如何拼成平台。
@@ -48,7 +48,7 @@ JeecgBoot 和 [[03-patterns/framework-characteristics/ruoyi-vue-pro|RuoYi/Yudao]
 
 ## Obsidian 关联
 
-- 框架特点：[[03-patterns/framework-characteristics/jeecgboot|JeecgBoot 特点]]
-- 后台脚手架对比：[[04-comparisons/admin-scaffold-comparison|后台脚手架对比]]
-- 一对一对比：[[04-comparisons/pairwise-backend-comparisons|后端项目一对一对比]]
-
+- 底层概念：[[solid]]、[[database]]、[[boundaries]]、[[abstractions]]
+- 框架特点：[[jeecgboot]]
+- 后台脚手架对比：[[admin-scaffold-comparison]]
+- 一对一对比：[[pairwise-backend-comparisons]]

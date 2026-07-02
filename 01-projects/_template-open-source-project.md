@@ -1,4 +1,4 @@
----
+﻿---
 type: open-source-project
 status: draft
 github:
@@ -22,13 +22,12 @@ updated:
 - 想验证的问题：
 - 和当前工作/项目的关系：
 
-## 基本信息
+## 稳定信息
 
 | 项 | 内容 |
 | --- | --- |
-| GitHub |  |
+| 仓库 |  |
 | 官方文档 |  |
-| Star / Fork |  |
 | License |  |
 | 主要语言 |  |
 | 技术栈 |  |
@@ -118,7 +117,7 @@ repo/
 
 ## 可复用模式
 
-- [[03-patterns/README|模式库入口]]
+- [[03-patterns/README]]
 
 ## 待解决问题
 

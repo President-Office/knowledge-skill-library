@@ -1,13 +1,13 @@
-# gin-vue-admin 源码阅读索引
+﻿# gin-vue-admin 源码阅读索引
 
-项目主卡：[[01-projects/flipped-aurora--gin-vue-admin|flipped-aurora/gin-vue-admin]]
-特点卡：[[03-patterns/framework-characteristics/gin-vue-admin|gin-vue-admin 特点]]
+项目主卡：[[flipped-aurora--gin-vue-admin]]
+特点卡：[[gin-vue-admin]]
 
 ## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | Go 后端项目结构 | 初稿 | [[02-reading-notes/flipped-aurora--gin-vue-admin/go-project-structure|go-project-structure]] |
+| 1 | Go 后端项目结构 | 初稿 | [[go-project-structure]] |
 
 ## 后续主题
 

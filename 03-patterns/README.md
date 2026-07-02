@@ -1,4 +1,4 @@
-# Patterns
+﻿# Patterns
 
 这里保存从多个开源项目中提炼出的可复用工程模式。只有跨项目有价值的经验才放进来。
 
@@ -19,6 +19,6 @@
 
 | 模式 | 来源项目 | 适用场景 | 文档 |
 | --- | --- | --- | --- |
-| 框架特点总览 | 当前已收录项目 | 快速理解每个框架的核心特点和学习切入点 | [[03-patterns/framework-characteristics/README|框架特点总览]] |
-| DIY 页面运行时边界 | `zhijiantianya/ruoyi-vue-pro` + `yudao-mall-uniapp` | 判断低代码/装修系统能否替代真实业务页面 | [[03-patterns/diy-page-runtime-boundary|DIY 页面运行时边界]] |
+| 框架特点总览 | 当前已收录项目 | 快速理解每个框架的核心特点和学习切入点 | [[03-patterns/framework-characteristics/README]] |
+| DIY 页面运行时边界 | `zhijiantianya/ruoyi-vue-pro` + `yudao-mall-uniapp` | 判断低代码/装修系统能否替代真实业务页面 | [[diy-page-runtime-boundary]] |
 | 待添加 | - | - | - |

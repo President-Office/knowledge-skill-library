@@ -1,4 +1,4 @@
----
+﻿---
 type: engineering-pattern
 status: draft
 sources:
@@ -94,4 +94,4 @@ DIY 页面接口 -> pages/index/page?id=... -> s-block-item 组件映射
 
 ## 相关项目卡
 
-- [[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya/ruoyi-vue-pro]]
+- [[zhijiantianya--ruoyi-vue-pro]]

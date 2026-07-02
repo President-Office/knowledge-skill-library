@@ -1,4 +1,4 @@
----
+﻿---
 type: source-reading
 status: initial
 project: yudaocode/yudao-ui-admin-vben
@@ -9,12 +9,12 @@ updated: 2026-07-02
 
 # yudao-ui-admin-vben - Monorepo 前端地图
 
-项目主卡：[[01-projects/yudaocode--yudao-ui-admin-vben|yudaocode/yudao-ui-admin-vben]]
-特点卡：[[03-patterns/framework-characteristics/yudao-ui-admin-vben|yudao-ui-admin-vben 特点]]
+项目主卡：[[yudaocode--yudao-ui-admin-vben]]
+特点卡：[[yudao-ui-admin-vben]]
 
 ## 阅读目标
 
-建立 Vben 版本的前端工程地图，理解它和 [[02-reading-notes/yudaocode--yudao-ui-admin-vue3/frontend-module-map|yudao-ui-admin-vue3 - 前端业务模块地图]] 的差异。
+建立 Vben 版本的前端工程地图，理解它和 [[frontend-module-map]] 的差异。
 
 ## 已确认结构
 
@@ -38,7 +38,7 @@ Vben 版本的学习重点不是某一个业务页面，而是前端平台化：
 - 业务迁移成本比单应用高。
 - 长期收益在工程治理、共享能力和多 UI 适配。
 
-如果只是快速交付 Yudao 业务后台，[[02-reading-notes/yudaocode--yudao-ui-admin-vue3/frontend-module-map|yudao-ui-admin-vue3]] 更直接；如果要建设长期后台前端底座，Vben 版本更值得研究。
+如果只是快速交付 Yudao 业务后台，[[frontend-module-map]] 更直接；如果要建设长期后台前端底座，Vben 版本更值得研究。
 
 ## 读源码时要验证的问题
 
@@ -49,6 +49,6 @@ Vben 版本的学习重点不是某一个业务页面，而是前端平台化：
 
 ## Obsidian 关联
 
-- Vue3 单应用对照：[[02-reading-notes/yudaocode--yudao-ui-admin-vue3/frontend-module-map|yudao-ui-admin-vue3 - 前端业务模块地图]]
-- 前端对比：[[04-comparisons/yudao-ui-admin-vue3-vs-vben|yudao-ui-admin-vue3 与 yudao-ui-admin-vben 对比]]
-
+- 底层概念：[[monorepo]]、[[boundaries]]、[[abstractions]]
+- Vue3 单应用对照：[[frontend-module-map]]
+- 前端对比：[[yudao-ui-admin-vue3-vs-vben]]

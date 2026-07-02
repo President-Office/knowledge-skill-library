@@ -8,92 +8,37 @@ license: GPL-3.0
 language: Python / JavaScript
 tags: [erp, frappe, python, accounting, inventory, manufacturing, crm, business-suite]
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-02
 ---
 
 # frappe/erpnext
 
 ## 一句话定位
 
-ERPNext 是基于 Frappe Framework 的开源 ERP 业务套件，覆盖会计、库存、采购、销售、制造、CRM、项目、支持、区域合规等业务域。它适合学习“元数据驱动的业务系统”如何组织 DocType、工作流、报表、权限、事件钩子和复杂业务交易。
+ERPNext 是基于 [[Frappe Framework]] 的开源 [[erp]] 业务套件，覆盖会计、库存、采购、销售、制造、CRM、项目、支持、区域合规等业务域。它适合学习“元数据驱动的业务系统”如何组织 [[DocType]]、工作流、报表、权限、事件钩子和复杂业务交易。
 
 ## 为什么学它
 
 - 它不是简单后台脚手架，而是完整 ERP 产品，适合学习真实业务系统的领域拆分和交易一致性。
-- 它和 `ruoyi-vue-pro` 形成互补：RuoYi/Yudao 更适合学习 Java 中后台脚手架、模块化和代码生成；ERPNext 更适合学习可配置业务对象、DocType、账务/库存交易和 Frappe 应用生态。
-- 之前做开源项目选型时，ERPNext/Frappe 曾被判断为更接近“可定制业务工作流平台”的底座，因为它已有合同、流程、会计、通知、自定义表单/应用等能力。
-- 它适合作为后续研究低代码业务平台、ERP、财务系统、库存系统和多模块业务套件的基准样本。
-
-## 当前快照
-
-查询日期：2026-06-30
-
-| 项 | 内容 |
-| --- | --- |
-| 仓库 | https://github.com/frappe/erpnext |
-| 平台 | GitHub |
-| 描述 | Free and Open Source Enterprise Resource Planning (ERP) |
-| 默认分支 | `develop` |
-| 当前 `HEAD` | `78a64cd79befb995213a734267922d04bd99355a` |
-| 主要语言 | Python |
-| License | GPL-3.0 |
-| Stars | 36,361 |
-| Forks | 11,924 |
-| GitHub `open_issues_count` | 1,937 |
-| 最近推送 | 2026-06-30T15:05:45Z |
-| 最近更新 | 2026-06-30T15:06:08Z |
-
-来源：GitHub API `repos/frappe/erpnext`、`git ls-remote --symref`、GitHub 仓库页。数字会随时间变化。
-
-## 已验证关键分支
-
-```text
-develop              78a64cd79befb995213a734267922d04bd99355a
-master               926150bccbf1d93bacebcf36dc33a3d116173138
-version-15           25ee3695f09f04c96e771138e02f68b2d3c8b8c1
-version-15-hotfix    1d24e1ef62b5b9d0f061e2f43e4033af9ebd884c
-version-16           e9a9224ec4558622e646d1db9d4647790fd8ecdf
-version-16-hotfix    169a4c82a472127423e9a25e71107d17ab571475
-```
-
-已验证标签：
-
-```text
-v15.0.0
-v16.0.0
-```
+- 它和 `ruoyi-vue-pro` 形成互补：RuoYi/Yudao 更适合学习 [[Java]] 中后台脚手架、模块化和代码生成；ERPNext 更适合学习可配置业务对象、[[DocType]]、账务/库存交易和 Frappe 应用生态。
+- 它适合作为研究低代码业务平台、ERP、财务系统、库存系统和多模块业务套件的基准样本。
+- 它能帮助理解 [[machine-readable-software-systems]] 中的元数据、权限、业务对象和工作流如何结合。
 
 ## 技术栈初判
 
 | 层次 | 技术/概念 |
 | --- | --- |
-| 后端 | Python、Frappe Framework |
-| 前端 | JavaScript、Frappe Desk、页面/表单脚本 |
-| 数据模型 | DocType、字段元数据、控制器类、JSON 定义 |
-| 业务域 | Accounting、Stock、Buying、Selling、Manufacturing、CRM、Projects、Support |
-| 扩展机制 | `hooks.py`、DocType event、scheduler events、fixtures、patches |
-| 运行工具 | bench、Frappe app/site 模型 |
+| 后端 | [[Python]]、[[Frappe Framework]] |
+| 前端 | [[JavaScript]]、[[Frappe Desk]]、页面/表单脚本 |
+| 数据模型 | [[DocType]]、字段 [[Metadata]]、控制器 [[class]]、[[JSON]] 定义 |
+| 业务域 | [[Accounting]]、[[Stock]]、[[Buying]]、[[Selling]]、[[Manufacturing]]、[[crm]]、[[Projects]]、[[Support]] |
+| 扩展机制 | `hooks.py`、[[DocType Event]]、[[Scheduler Event]]、[[fixtures]]、[[patches]] |
+| 运行工具 | [[bench]]、[[Frappe App]] / [[Frappe Site]] 模型 |
 | License 影响 | GPL-3.0，二次开发和分发时要认真评估开源义务 |
 
 ## 顶层目录入口
 
-GitHub API 在 `develop` 分支看到的关键顶层结构：
-
-```text
-erpnext/
-├── .github
-├── banking
-├── erpnext
-├── semgrep
-├── README.md
-├── CODEOWNERS
-├── license.txt
-├── package.json
-├── pyproject.toml
-└── yarn.lock
-```
-
-`erpnext/` 应用目录下的关键模块：
+ERPNext 的关键结构不是普通 Controller / Service / Mapper，而是 Frappe app 结构和业务模块目录。
 
 ```text
 erpnext/
@@ -123,7 +68,7 @@ erpnext/
 
 ### 1. 先读 Frappe 应用结构
 
-目标：搞清楚 ERPNext 是如何作为 Frappe app 接入运行时的。
+目标：搞清楚 ERPNext 是如何作为 [[Frappe App]] 接入运行时的。
 
 优先阅读：
 
@@ -141,7 +86,7 @@ erpnext/
 
 ### 2. 再读 DocType 模型
 
-目标：理解 ERPNext 的核心不是传统 Java MVC 分层，而是 DocType + 元数据 + 控制器 + 事件钩子。
+目标：理解 ERPNext 的核心不是传统 Java MVC 分层，而是 [[DocType]] + [[Metadata]] + 控制器 + 事件钩子。
 
 优先阅读：
 
@@ -211,6 +156,6 @@ ERPNext 值得长期学习，但不适合从代码目录从头扫到尾。更高
 
 ## 相关笔记
 
-- [[02-reading-notes/frappe--erpnext/README|源码阅读索引]]
-- [[05-practice-labs/frappe--erpnext/local-setup|本地运行实验]]
-- [[04-comparisons/ruoyi-vue-pro-vs-erpnext|RuoYi/Yudao 与 ERPNext 对比]]
+- [[02-reading-notes/frappe--erpnext/README]]
+- [[05-practice-labs/frappe--erpnext/local-setup]]
+- [[04-comparisons/ruoyi-vue-pro-vs-erpnext]]

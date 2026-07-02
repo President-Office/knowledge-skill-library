@@ -1,13 +1,13 @@
-# yudao-ui-admin-vben 源码阅读索引
+﻿# yudao-ui-admin-vben 源码阅读索引
 
-项目主卡：[[01-projects/yudaocode--yudao-ui-admin-vben|yudaocode/yudao-ui-admin-vben]]
-特点卡：[[03-patterns/framework-characteristics/yudao-ui-admin-vben|yudao-ui-admin-vben 特点]]
+项目主卡：[[yudaocode--yudao-ui-admin-vben]]
+特点卡：[[yudao-ui-admin-vben]]
 
 ## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | Monorepo 前端地图 | 初稿 | [[02-reading-notes/yudaocode--yudao-ui-admin-vben/monorepo-frontend-map|monorepo-frontend-map]] |
+| 1 | Monorepo 前端地图 | 初稿 | [[monorepo-frontend-map]] |
 
 ## 后续主题
 

@@ -1,13 +1,13 @@
-# yudao-ui-admin-vue3 源码阅读索引
+﻿# yudao-ui-admin-vue3 源码阅读索引
 
-项目主卡：[[01-projects/yudaocode--yudao-ui-admin-vue3|yudaocode/yudao-ui-admin-vue3]]
-特点卡：[[03-patterns/framework-characteristics/yudao-ui-admin-vue3|yudao-ui-admin-vue3 特点]]
+项目主卡：[[yudaocode--yudao-ui-admin-vue3]]
+特点卡：[[yudao-ui-admin-vue3]]
 
 ## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | 前端业务模块地图 | 初稿 | [[02-reading-notes/yudaocode--yudao-ui-admin-vue3/frontend-module-map|frontend-module-map]] |
+| 1 | 前端业务模块地图 | 初稿 | [[frontend-module-map]] |
 
 ## 后续主题
 

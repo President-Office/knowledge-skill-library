@@ -1,4 +1,4 @@
----
+﻿---
 type: framework-characteristics
 status: draft
 project: directus/directus
@@ -8,28 +8,28 @@ updated: 2026-07-02
 
 # Directus 特点
 
-项目主卡：[[01-projects/directus--directus|directus/directus]]
+项目主卡：[[directus--directus]]
 
 ## 核心定位
 
-数据库优先的 Headless CMS / Admin / API 平台。它的起点不是先写业务代码，而是把现有数据库通过元数据、权限、Admin App 和即时 API 产品化。
+数据库优先的 [[headless-cms]] / [[Admin App]] / [[API]] 平台。它的起点不是先写业务代码，而是把现有数据库通过 [[Metadata]]、[[权限模型]]、[[Admin App]] 和 [[Instant API]] 产品化。
 
 ## 主要特点
 
 | 特点 | 说明 | 学习价值 |
 | --- | --- | --- |
-| Database-first | 从现有数据库 schema 出发组织后台和 API | 学数据库如何变成产品化后台 |
-| 元数据驱动 | collections、fields、relations、permissions 由元数据表达 | 学运行时配置和动态 Admin |
-| 即时 API | REST / GraphQL / SDK 围绕数据模型生成 | 学 API 平台化 |
-| Admin App | 管理端根据元数据动态渲染 | 学后台页面运行时生成 |
-| TypeScript monorepo | `api`、`app`、`sdk`、`packages` 分包 | 学 TS 后台平台包边界 |
+| [[Database-first]] | 从现有数据库 [[schema]] 出发组织后台和 [[API]] | 学数据库如何变成产品化后台 |
+| 元数据驱动 | collections、fields、relations、permissions 由 [[Metadata]] 表达 | 学运行时配置和动态 Admin |
+| [[Instant API]] | [[REST]] / [[GraphQL]] / [[SDK]] 围绕数据模型生成 | 学 [[API]] 平台化 |
+| [[Admin Panel]] | 管理端根据 [[Metadata]] 动态渲染 | 学后台页面运行时生成 |
+| [[TypeScript]] monorepo | `api`、`app`、`sdk`、`packages` 分包 | 学 TS 后台平台包边界 |
 | 许可证有约束 | MSCL-1.0-GPL 不是普通 MIT/Apache | 学自托管平台的许可证评估 |
 
 ## 最适合怎么读
 
 1. 先读 monorepo：`api`、`app`、`directus`、`sdk`、`packages`。
-2. 再读 schema / metadata / permissions。
-3. 最后读 Admin App、SDK、extensions。
+2. 再读 [[schema]] / [[Metadata]] / [[权限模型]]。
+3. 最后读 [[Admin App]]、[[SDK]]、extensions。
 
 ## 不要误解
 
@@ -39,7 +39,9 @@ updated: 2026-07-02
 
 ## 关联
 
-- [[03-patterns/framework-characteristics/payload|Payload 特点]]
-- [[04-comparisons/database-first-admin-platforms|后台/CMS/API 平台对比]]
-- [[04-comparisons/pairwise-backend-comparisons|后端项目一对一对比]]
-
+- [[database]]
+- [[monorepo]]
+- [[headless-cms]]
+- [[payload]]
+- [[database-first-admin-platforms]]
+- [[pairwise-backend-comparisons]]

@@ -24,8 +24,7 @@ updated: 2026-06-30
 | Node | 待确认 |
 | pnpm | 待确认 |
 | Database | MongoDB / Postgres / SQLite 待选 |
-| 分支 | `main` |
-| 当前根版本 | `4.0.0-beta.0` |
+| 模板 | 待确认 |
 
 ## 初始入口
 

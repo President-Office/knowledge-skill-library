@@ -1,4 +1,4 @@
-# Projects
+﻿# Projects
 
 每个开源项目一张主卡，用来回答“这个项目是什么、为什么值得学、源码从哪里切入、最后学到了什么”。
 
@@ -32,12 +32,12 @@ ruanyf--weekly.md
 
 | 项目 | 领域 | 技术栈 | 学习状态 | 主卡 |
 | --- | --- | --- | --- | --- |
-| zhijiantianya/ruoyi-vue-pro | Java 企业后台 / SaaS / 业务中台 | Spring Boot、MyBatis Plus、Vue、Maven 多模块 | 已建卡 | [[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya--ruoyi-vue-pro]] |
-| zhijiantianya/yudao-cloud | Java 企业后台 / Spring Cloud 微服务 | Spring Cloud Alibaba、Nacos、Gateway、Sentinel、Seata、Vue | 已建卡 | [[01-projects/zhijiantianya--yudao-cloud|zhijiantianya--yudao-cloud]] |
-| yudaocode/yudao-ui-admin-vue3 | Yudao / RuoYi Vue3 管理后台前端 | Vue3、Vite、TypeScript、Element Plus | 已建卡 | [[01-projects/yudaocode--yudao-ui-admin-vue3|yudaocode--yudao-ui-admin-vue3]] |
-| yudaocode/yudao-ui-admin-vben | Vben Admin 5 后台前端 / 多 UI monorepo | Vue3、Vite、Turbo、pnpm workspace、Vben Admin 5 | 已建卡 | [[01-projects/yudaocode--yudao-ui-admin-vben|yudaocode--yudao-ui-admin-vben]] |
-| frappe/erpnext | ERP / 业务套件 / 元数据驱动平台 | Python、Frappe Framework、DocType、JavaScript | 已建卡 | [[01-projects/frappe--erpnext|frappe--erpnext]] |
-| flipped-aurora/gin-vue-admin | Go + Vue 后台脚手架 / AI 辅助开发平台 | Gin、GORM、Casbin、JWT、Vue3、Vite、Element Plus | 已建卡 | [[01-projects/flipped-aurora--gin-vue-admin|flipped-aurora--gin-vue-admin]] |
-| jeecgboot/JeecgBoot | Java 低代码 / 零代码 / AI 辅助后台平台 | Spring Boot、MyBatis Plus、Shiro、JWT、Vue3、Vite、Ant Design Vue | 已建卡 | [[01-projects/jeecgboot--JeecgBoot|jeecgboot--JeecgBoot]] |
-| directus/directus | 数据库优先后台 / Headless CMS / API 平台 | TypeScript、Vue、Node、pnpm monorepo | 已建卡 | [[01-projects/directus--directus|directus--directus]] |
-| payloadcms/payload | TypeScript / Next.js 全栈后台与 CMS | TypeScript、Next.js、Admin Panel、数据库适配器、插件 | 已建卡 | [[01-projects/payloadcms--payload|payloadcms--payload]] |
+| zhijiantianya/ruoyi-vue-pro | Java 企业后台 / SaaS / 业务中台 | [[Spring Boot]]、[[MyBatis Plus]]、[[Vue]]、[[Maven]] 多模块 | 已建卡 | [[zhijiantianya--ruoyi-vue-pro]] |
+| zhijiantianya/yudao-cloud | Java 企业后台 / Spring Cloud 微服务 | [[Spring Cloud Alibaba]]、[[Nacos]]、[[Spring Cloud Gateway]]、[[Sentinel]]、[[Seata]]、[[Vue]] | 已建卡 | [[zhijiantianya--yudao-cloud]] |
+| yudaocode/yudao-ui-admin-vue3 | Yudao / RuoYi Vue3 管理后台前端 | [[Vue 3]]、[[Vite]]、[[TypeScript]]、[[Element Plus]] | 已建卡 | [[yudaocode--yudao-ui-admin-vue3]] |
+| yudaocode/yudao-ui-admin-vben | Vben Admin 5 后台前端 / 多 UI monorepo | [[Vue 3]]、[[Vite]]、[[Turborepo]]、[[pnpm workspace]]、[[Vben Admin]] | 已建卡 | [[yudaocode--yudao-ui-admin-vben]] |
+| frappe/erpnext | ERP / 业务套件 / 元数据驱动平台 | [[Python]]、[[Frappe Framework]]、[[DocType]]、[[JavaScript]] | 已建卡 | [[frappe--erpnext]] |
+| flipped-aurora/gin-vue-admin | Go + Vue 后台脚手架 / AI 辅助开发平台 | [[Gin]]、[[GORM]]、[[Casbin]]、[[JWT]]、[[Vue 3]]、[[Vite]]、[[Element Plus]] | 已建卡 | [[flipped-aurora--gin-vue-admin]] |
+| jeecgboot/JeecgBoot | Java 低代码 / 零代码 / AI 辅助后台平台 | [[Spring Boot]]、[[MyBatis Plus]]、[[Shiro]]、[[JWT]]、[[Vue 3]]、[[Vite]]、[[Ant Design Vue]] | 已建卡 | [[jeecgboot--JeecgBoot]] |
+| directus/directus | 数据库优先后台 / Headless CMS / API 平台 | [[TypeScript]]、[[Vue]]、[[Node.js]]、[[pnpm workspace]] | 已建卡 | [[directus--directus]] |
+| payloadcms/payload | TypeScript / Next.js 全栈后台与 CMS | [[TypeScript]]、[[Next.js]]、[[Admin Panel]]、[[数据库适配器]]、[[插件体系]] | 已建卡 | [[payloadcms--payload]] |

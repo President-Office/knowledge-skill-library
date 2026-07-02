@@ -1,4 +1,4 @@
-# Knowledge Skill Library
+﻿# Knowledge Skill Library
 
 这个知识库用于系统学习 GitHub 上的开源项目，并把阅读源码、运行实践、架构判断和可复用经验沉淀下来。
 
@@ -6,26 +6,26 @@
 
 ## 快速入口
 
-- [[Home|Home]]
-- [[00-inbox/README|00-inbox]]：临时收集入口，先放链接、想法和待整理资料。
-- [[01-projects/README|01-projects]]：每个开源项目一张主卡，记录定位、学习目标、仓库结构、关键模块和结论。
-- [[02-reading-notes/README|02-reading-notes]]：源码阅读笔记，按模块、调用链、PR、Issue 或功能点拆分。
-- [[03-patterns/README|03-patterns]]：从项目中抽出的通用工程模式、架构模式、代码组织方式。
-- [[04-comparisons/README|04-comparisons]]：同类项目横向对比，用于技术选型和判断优先级。
-- [[05-practice-labs/README|05-practice-labs]]：本地运行、改造实验、最小复现和二次开发记录。
-- [[06-glossary/README|06-glossary]]：术语、概念、缩写、项目内黑话。
-- [[_templates/github-project-intake|项目录入模板]]
-- [[_templates/weekly-open-source-learning|周报模板]]
+- [[Home]]
+- [[00-inbox/README]]：临时收集入口，先放链接、想法和待整理资料。
+- [[01-projects/README]]：每个开源项目一张主卡，记录定位、学习目标、仓库结构、关键模块和结论。
+- [[02-reading-notes/README]]：源码阅读笔记，按模块、调用链、PR、Issue 或功能点拆分。
+- [[03-patterns/README]]：从项目中抽出的通用工程模式、架构模式、代码组织方式。
+- [[04-comparisons/README]]：同类项目横向对比，用于技术选型和判断优先级。
+- [[05-practice-labs/README]]：本地运行、改造实验、最小复现和二次开发记录。
+- [[06-glossary/README]]：术语、概念、缩写、项目内黑话。
+- [[github-project-intake]]
+- [[weekly-open-source-learning]]
 
 ## 学习一个开源项目的流程
 
-1. 在 [[00-inbox/README|Inbox]] 放入 GitHub 链接和初步动机。
+1. 在 [[00-inbox/README]] 放入 GitHub 链接和初步动机。
 2. 用 `01-projects/_template-open-source-project.md` 建立项目主卡。
 3. 先读 `README`、官方文档、目录结构、启动方式和核心配置。
-4. 在 [[02-reading-notes/README|Reading Notes]] 记录关键模块的源码阅读过程。
-5. 在 [[05-practice-labs/README|Practice Labs]] 记录本地运行、调试、改造和验证结果。
-6. 把可迁移的做法提炼到 [[03-patterns/README|Patterns]]。
-7. 如果涉及选型，把项目放进 [[04-comparisons/README|Comparisons]] 和同类项目比较。
+4. 在 [[02-reading-notes/README]] 记录关键模块的源码阅读过程。
+5. 在 [[05-practice-labs/README]] 记录本地运行、调试、改造和验证结果。
+6. 把可迁移的做法提炼到 [[03-patterns/README]]。
+7. 如果涉及选型，把项目放进 [[04-comparisons/README]] 和同类项目比较。
 8. 更新相关 README 索引，保证以后能快速找回。
 
 ## Obsidian 约定

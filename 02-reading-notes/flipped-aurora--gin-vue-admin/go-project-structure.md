@@ -1,4 +1,4 @@
----
+﻿---
 type: source-reading
 status: initial
 project: flipped-aurora/gin-vue-admin
@@ -9,8 +9,8 @@ updated: 2026-07-02
 
 # gin-vue-admin - Go 后端项目结构
 
-项目主卡：[[01-projects/flipped-aurora--gin-vue-admin|flipped-aurora/gin-vue-admin]]
-特点卡：[[03-patterns/framework-characteristics/gin-vue-admin|gin-vue-admin 特点]]
+项目主卡：[[flipped-aurora--gin-vue-admin]]
+特点卡：[[gin-vue-admin]]
 
 ## 阅读目标
 
@@ -44,7 +44,7 @@ updated: 2026-07-02
 - `router` 将模块 API 注册到 Gin。
 - `middleware` 统一处理认证、权限和横切逻辑。
 
-这很适合和 [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/maven-module-structure|ruoyi-vue-pro Maven 多模块结构]] 对照：一个是 Go 的轻量分层，一个是 Java 的多模块分层。
+这很适合和 [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/maven-module-structure]] 对照：一个是 Go 的轻量分层，一个是 Java 的多模块分层。
 
 ## 读源码时要验证的问题
 
@@ -56,7 +56,7 @@ updated: 2026-07-02
 
 ## Obsidian 关联
 
-- 框架特点：[[03-patterns/framework-characteristics/gin-vue-admin|gin-vue-admin 特点]]
-- 后台脚手架对比：[[04-comparisons/admin-scaffold-comparison|后台脚手架对比]]
-- 一对一对比：[[04-comparisons/pairwise-backend-comparisons|后端项目一对一对比]]
-
+- 底层概念：[[solid]]、[[boundaries]]、[[abstractions]]
+- 框架特点：[[gin-vue-admin]]
+- 后台脚手架对比：[[admin-scaffold-comparison]]
+- 一对一对比：[[pairwise-backend-comparisons]]

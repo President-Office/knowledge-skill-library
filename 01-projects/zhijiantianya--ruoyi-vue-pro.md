@@ -1,4 +1,4 @@
----
+﻿---
 type: open-source-project
 status: active
 source: gitee
@@ -24,39 +24,19 @@ updated: 2026-06-30
 - 它适合作为以后阅读国内 Java SaaS / 中后台 / 低代码 / 业务平台项目的基准参照。
 - 当前知识库后续可以围绕它沉淀一批可复用模式：RBAC、数据权限、多租户、代码生成、模块化 Maven、后台前端组织、业务插件边界。
 
-## 当前快照
-
-查询日期：2026-06-30
-
-| 项 | 内容 |
-| --- | --- |
-| 仓库 | https://gitee.com/zhijiantianya/ruoyi-vue-pro |
-| 平台 | Gitee |
-| 所属 | 芋道源码 |
-| 分类 | Web Development / Backend Management |
-| License | MIT |
-| 默认分支 | `master` |
-| 分支 | 远程验证 9 个分支：`develop`、`feat/iot-2026`、`feature/dev-yunai`、`feature/im-dev`、`master`、`master-dm8-jdk17`、`master-jdk17`、`master-jdk17-bpm-bug-fix`、`master-jdk25` |
-| 标签 | Gitee 仓库页显示 64 个标签，远程引用可见 `v2026.06(jdk8/11)`、`v2026.06(jdk17/21)`、`v2026.06(jdk25)` |
-| 规模 | Gitee 页面显示约 111.2K Star、19.9K Fork、11,604 commits |
-| 当前主干提交 | `81c976551fceada9153027e87013bdabc7cb7095` |
-| Issues / PR | Gitee 页面显示 Issues 0、Pull Requests 6 |
-
-注意：这些数字是 Gitee 页面在 2026-06-30 的展示快照，后续会变化。
-
 ## 技术栈初判
 
 | 层次 | 技术 |
 | --- | --- |
-| 后端 | Spring Boot、MyBatis Plus、Maven 多模块 |
-| 前端 | Vue、Element 系列后台管理界面 |
-| 权限 | RBAC、数据权限 |
-| 平台能力 | SaaS 多租户、三方登录、支付、工作流、报表 |
-| 业务模块 | Mall、Member、CRM、ERP、MES、WMS、MP、IM、IoT、AI |
+| 后端 | [[Spring Boot]]、[[MyBatis Plus]]、[[Maven]] 多模块 |
+| 前端 | [[Vue]]、[[Element Plus]] 系列后台管理界面 |
+| 权限 | [[RBAC]]、[[数据权限]] |
+| 平台能力 | [[SaaS]] [[多租户]]、[[三方登录]]、[[支付]]、[[工作流]]、[[报表]] |
+| 业务模块 | [[Mall]]、[[Member]]、[[crm]]、[[erp]]、[[mes]]、[[WMS]]、[[MP]]、[[IM]]、[[IoT]]、[[AI]] |
 
 ## 仓库目录入口
 
-从 Gitee 页面可见的顶层目录：
+关键顶层结构：
 
 ```text
 ruoyi-vue-pro/
@@ -180,6 +160,6 @@ ruoyi-vue-pro/
 
 ## 相关笔记
 
-- [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/README|源码阅读索引]]
-- [[05-practice-labs/zhijiantianya--ruoyi-vue-pro/local-setup|本地运行实验]]
-- [[03-patterns/diy-page-runtime-boundary|DIY 页面运行时边界]]
+- [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/README]]
+- [[05-practice-labs/zhijiantianya--ruoyi-vue-pro/local-setup]]
+- [[diy-page-runtime-boundary]]

@@ -1,13 +1,13 @@
-# JeecgBoot 源码阅读索引
+﻿# JeecgBoot 源码阅读索引
 
-项目主卡：[[01-projects/jeecgboot--JeecgBoot|jeecgboot/JeecgBoot]]
-特点卡：[[03-patterns/framework-characteristics/jeecgboot|JeecgBoot 特点]]
+项目主卡：[[jeecgboot--JeecgBoot]]
+特点卡：[[jeecgboot]]
 
 ## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | Maven 多模块结构 | 初稿 | [[02-reading-notes/jeecgboot--JeecgBoot/maven-module-structure|maven-module-structure]] |
+| 1 | Maven 多模块结构 | 初稿 | [[02-reading-notes/jeecgboot--JeecgBoot/maven-module-structure]] |
 
 ## 后续主题
 

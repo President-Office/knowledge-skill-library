@@ -1,4 +1,4 @@
----
+﻿---
 type: framework-characteristics
 status: draft
 project: zhijiantianya/yudao-cloud
@@ -8,27 +8,27 @@ updated: 2026-07-02
 
 # Yudao Cloud 特点
 
-项目主卡：[[01-projects/zhijiantianya--yudao-cloud|zhijiantianya/yudao-cloud]]
+项目主卡：[[zhijiantianya--yudao-cloud]]
 
 ## 核心定位
 
-Yudao/RuoYi 体系的 Spring Cloud 微服务版本。它保留单体版的后台业务模块，但把学习重点转向 Gateway、Nacos、服务拆分、服务治理、分布式事务、任务调度和消息队列。
+Yudao/RuoYi 体系的 [[Spring Cloud]] 微服务版本。它保留单体版的后台业务模块，但把学习重点转向 Gateway、Nacos、服务拆分、服务治理、分布式事务、任务调度和 [[MQ]]。
 
 ## 主要特点
 
 | 特点 | 说明 | 学习价值 |
 | --- | --- | --- |
-| Spring Cloud Alibaba 体系 | Nacos、Gateway、Sentinel、Seata 等组件成体系出现 | 学国内 Java 微服务后台常见技术栈 |
-| Gateway 统一入口 | 请求先经过网关再进入业务服务 | 学路由、鉴权前置、跨服务调用入口 |
-| Nacos 注册配置 | 服务发现和配置管理是运行基础 | 学多服务环境配置和本地调试依赖 |
-| 分布式组件齐全 | Seata、XXL-Job、MQ、Sentinel | 学分布式事务、定时任务、异步消息、限流熔断的边界 |
+| [[Spring Cloud Alibaba]] 体系 | [[Nacos]]、[[Spring Cloud Gateway]]、[[Sentinel]]、[[Seata]] 等组件成体系出现 | 学国内 [[Java]] 微服务后台常见技术栈 |
+| [[Spring Cloud Gateway]] 统一入口 | 请求先经过网关再进入业务服务 | 学路由、鉴权前置、跨服务调用入口 |
+| [[Nacos]] 注册配置 | 服务发现和配置管理是运行基础 | 学多服务环境配置和本地调试依赖 |
+| 分布式组件齐全 | [[Seata]]、[[XXL-Job]]、[[MQ]]、[[Sentinel]] | 学分布式事务、定时任务、异步消息、限流熔断的边界 |
 | 与单体版同源 | 业务模块和 `ruoyi-vue-pro` 有可比性 | 很适合做“单体到微服务”的一对一对照 |
 | 多 JDK 主线 | `master`、`master-jdk17`、`master-jdk25` 对应不同技术基线 | 学版本路线和升级策略 |
 
 ## 最适合怎么读
 
 1. 先读 `yudao-gateway`、根 `pom.xml`、`yudao-server`。
-2. 再读 Nacos 配置、认证链路、服务注册和路由规则。
+2. 再读 [[Nacos]] 配置、认证链路、服务注册和路由规则。
 3. 选择一个业务模块，和 `ruoyi-vue-pro` 单体版做同模块对比。
 
 ## 不要误解
@@ -39,7 +39,8 @@ Yudao/RuoYi 体系的 Spring Cloud 微服务版本。它保留单体版的后台
 
 ## 关联
 
-- [[03-patterns/framework-characteristics/ruoyi-vue-pro|RuoYi/Yudao 特点]]
-- [[04-comparisons/yudao-monolith-vs-cloud|Yudao 单体版与 Cloud 版对比]]
-- [[04-comparisons/pairwise-backend-comparisons|后端项目一对一对比]]
-
+- [[boundaries]]、[[abstractions]]
+- [[solid]]
+- [[ruoyi-vue-pro]]
+- [[yudao-monolith-vs-cloud]]
+- [[pairwise-backend-comparisons]]

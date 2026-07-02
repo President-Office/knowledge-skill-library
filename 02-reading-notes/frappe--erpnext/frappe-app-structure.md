@@ -1,4 +1,4 @@
----
+﻿---
 type: source-reading
 status: initial
 project: frappe/erpnext
@@ -9,8 +9,8 @@ updated: 2026-07-02
 
 # ERPNext - Frappe app 结构
 
-项目主卡：[[01-projects/frappe--erpnext|frappe/erpnext]]
-特点卡：[[03-patterns/framework-characteristics/erpnext|ERPNext 特点]]
+项目主卡：[[frappe--erpnext]]
+特点卡：[[erpnext]]
 
 ## 阅读目标
 
@@ -41,7 +41,7 @@ ERPNext 的核心不是 Controller / Service / Mapper，而是 Frappe 的 DocTyp
 - JavaScript 表单脚本承载前端交互。
 - hooks 和 patches 负责扩展、事件接入和升级。
 
-这和 [[03-patterns/framework-characteristics/ruoyi-vue-pro|RuoYi/Yudao]]、[[03-patterns/framework-characteristics/jeecgboot|JeecgBoot]] 的 Java 分层模型完全不同。
+这和 [[ruoyi-vue-pro]]、[[jeecgboot]] 的 Java 分层模型完全不同。
 
 ## 读源码时要验证的问题
 
@@ -52,7 +52,7 @@ ERPNext 的核心不是 Controller / Service / Mapper，而是 Frappe 的 DocTyp
 
 ## Obsidian 关联
 
-- 框架特点：[[03-patterns/framework-characteristics/erpnext|ERPNext 特点]]
-- 与 RuoYi 对比：[[04-comparisons/ruoyi-vue-pro-vs-erpnext|RuoYi/Yudao 与 ERPNext 对比]]
-- 一对一对比：[[04-comparisons/pairwise-backend-comparisons|后端项目一对一对比]]
-
+- 底层概念：[[database]]、[[boundaries]]、[[abstractions]]
+- 框架特点：[[erpnext]]
+- 与 RuoYi 对比：[[ruoyi-vue-pro-vs-erpnext]]
+- 一对一对比：[[pairwise-backend-comparisons]]

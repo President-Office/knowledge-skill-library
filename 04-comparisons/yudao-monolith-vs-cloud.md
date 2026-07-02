@@ -1,4 +1,4 @@
----
+﻿---
 type: comparison
 status: draft
 projects:
@@ -12,7 +12,7 @@ updated: 2026-07-01
 
 ## 结论
 
-先读 [[01-projects/zhijiantianya--ruoyi-vue-pro|ruoyi-vue-pro]]，再读 [[01-projects/zhijiantianya--yudao-cloud|yudao-cloud]]。
+先读 [[zhijiantianya--ruoyi-vue-pro]]，再读 [[zhijiantianya--yudao-cloud]]。
 
 `ruoyi-vue-pro` 更适合作为 Yudao/RuoYi 的第一份源码样本，因为它部署简单、模块边界集中、业务代码路径更短。`yudao-cloud` 更适合作为第二阶段，用来学习同一套后台业务能力如何放进 Spring Cloud Alibaba 微服务体系。
 

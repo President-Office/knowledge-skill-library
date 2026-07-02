@@ -1,4 +1,4 @@
----
+﻿---
 type: source-reading
 status: initial
 project: zhijiantianya/ruoyi-vue-pro
@@ -9,8 +9,8 @@ updated: 2026-07-02
 
 # ruoyi-vue-pro - Maven 多模块结构
 
-项目主卡：[[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya/ruoyi-vue-pro]]
-特点卡：[[03-patterns/framework-characteristics/ruoyi-vue-pro|RuoYi/Yudao 特点]]
+项目主卡：[[zhijiantianya--ruoyi-vue-pro]]
+特点卡：[[ruoyi-vue-pro]]
 
 ## 阅读目标
 
@@ -47,7 +47,7 @@ updated: 2026-07-02
 
 ## Obsidian 关联
 
-- 对比 Cloud 版：[[02-reading-notes/zhijiantianya--yudao-cloud/microservice-module-map|yudao-cloud - 微服务模块地图]]
-- 框架特点：[[03-patterns/framework-characteristics/ruoyi-vue-pro|RuoYi/Yudao 特点]]
-- 单体 vs Cloud：[[04-comparisons/yudao-monolith-vs-cloud|Yudao 单体版与 Cloud 版对比]]
-
+- 底层概念：[[solid]]、[[database]]、[[boundaries]]、[[abstractions]]
+- 对比 Cloud 版：[[microservice-module-map]]
+- 框架特点：[[ruoyi-vue-pro]]
+- 单体 vs Cloud：[[yudao-monolith-vs-cloud]]

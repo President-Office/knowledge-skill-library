@@ -1,13 +1,13 @@
-# ruoyi-vue-pro 源码阅读索引
+﻿# ruoyi-vue-pro 源码阅读索引
 
-项目主卡：[[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya/ruoyi-vue-pro]]
-特点卡：[[03-patterns/framework-characteristics/ruoyi-vue-pro|RuoYi/Yudao 特点]]
+项目主卡：[[zhijiantianya--ruoyi-vue-pro]]
+特点卡：[[ruoyi-vue-pro]]
 
 ## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | Maven 多模块结构 | 初稿 | [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/maven-module-structure|maven-module-structure]] |
+| 1 | Maven 多模块结构 | 初稿 | [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/maven-module-structure]] |
 
 ## 后续主题
 

@@ -1,4 +1,4 @@
----
+﻿---
 type: comparison
 status: draft
 projects:
@@ -21,13 +21,13 @@ updated: 2026-07-01
 
 | 简称 | 项目 | 核心定位 | 技术栈 | License |
 | --- | --- | --- | --- | --- |
-| RuoYi/Yudao | [[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya/ruoyi-vue-pro]] | Java 企业后台 / SaaS / 业务中台 | Spring Boot、MyBatis Plus、Vue | MIT |
-| Yudao Cloud | [[01-projects/zhijiantianya--yudao-cloud|zhijiantianya/yudao-cloud]] | Java 企业后台 / Spring Cloud 微服务 | Spring Cloud Alibaba、Nacos、Gateway、Sentinel、Seata | MIT |
-| JeecgBoot | [[01-projects/jeecgboot--JeecgBoot|jeecgboot/JeecgBoot]] | Java 低代码 / 零代码 / AI 辅助后台平台 | Spring Boot、MyBatis Plus、Shiro、Vue3 | Apache-2.0 |
-| gin-vue-admin | [[01-projects/flipped-aurora--gin-vue-admin|flipped-aurora/gin-vue-admin]] | Go + Vue 后台脚手架 | Gin、GORM、Casbin、JWT、Vue3 | Business Source License 1.1 |
-| ERPNext | [[01-projects/frappe--erpnext|frappe/erpnext]] | ERP 业务套件 | Python、Frappe、DocType | GPL-3.0 |
-| Directus | [[01-projects/directus--directus|directus/directus]] | 数据库优先 Headless CMS / Admin / API | TypeScript、Vue、Node | MSCL-1.0-GPL |
-| Payload | [[01-projects/payloadcms--payload|payloadcms/payload]] | TypeScript / Next.js 全栈后台和 CMS | TypeScript、Next.js | MIT |
+| RuoYi/Yudao | [[zhijiantianya--ruoyi-vue-pro]] | Java 企业后台 / SaaS / 业务中台 | Spring Boot、MyBatis Plus、Vue | MIT |
+| Yudao Cloud | [[zhijiantianya--yudao-cloud]] | Java 企业后台 / Spring Cloud 微服务 | Spring Cloud Alibaba、Nacos、Gateway、Sentinel、Seata | MIT |
+| JeecgBoot | [[jeecgboot--JeecgBoot]] | Java 低代码 / 零代码 / AI 辅助后台平台 | Spring Boot、MyBatis Plus、Shiro、Vue3 | Apache-2.0 |
+| gin-vue-admin | [[flipped-aurora--gin-vue-admin]] | Go + Vue 后台脚手架 | Gin、GORM、Casbin、JWT、Vue3 | Business Source License 1.1 |
+| ERPNext | [[frappe--erpnext]] | ERP 业务套件 | Python、Frappe、DocType | GPL-3.0 |
+| Directus | [[directus--directus]] | 数据库优先 Headless CMS / Admin / API | TypeScript、Vue、Node | MSCL-1.0-GPL |
+| Payload | [[payloadcms--payload]] | TypeScript / Next.js 全栈后台和 CMS | TypeScript、Next.js | MIT |
 
 ## 总体结论
 
@@ -337,23 +337,23 @@ updated: 2026-07-01
 
 如果按“后台系统能力”学习：
 
-1. [[01-projects/zhijiantianya--ruoyi-vue-pro|RuoYi/Yudao]]
-2. [[01-projects/zhijiantianya--yudao-cloud|Yudao Cloud]]
-3. [[01-projects/jeecgboot--JeecgBoot|JeecgBoot]]
-4. [[01-projects/flipped-aurora--gin-vue-admin|gin-vue-admin]]
+1. [[zhijiantianya--ruoyi-vue-pro]]
+2. [[zhijiantianya--yudao-cloud]]
+3. [[jeecgboot--JeecgBoot]]
+4. [[flipped-aurora--gin-vue-admin]]
 
 如果按“业务平台和元数据”学习：
 
-1. [[01-projects/frappe--erpnext|ERPNext]]
-2. [[01-projects/directus--directus|Directus]]
-3. [[01-projects/payloadcms--payload|Payload]]
+1. [[frappe--erpnext]]
+2. [[directus--directus]]
+3. [[payloadcms--payload]]
 
 如果按“选型对照”学习：
 
-1. Java 常规后台：[[01-projects/zhijiantianya--ruoyi-vue-pro|RuoYi/Yudao]]
-2. Java 微服务后台：[[01-projects/zhijiantianya--yudao-cloud|Yudao Cloud]]
-3. Java 低代码：[[01-projects/jeecgboot--JeecgBoot|JeecgBoot]]
-4. Go 后台：[[01-projects/flipped-aurora--gin-vue-admin|gin-vue-admin]]
-5. ERP 业务套件：[[01-projects/frappe--erpnext|ERPNext]]
-6. 数据库优先后台：[[01-projects/directus--directus|Directus]]
-7. TS/Next 后台：[[01-projects/payloadcms--payload|Payload]]
+1. Java 常规后台：[[zhijiantianya--ruoyi-vue-pro]]
+2. Java 微服务后台：[[zhijiantianya--yudao-cloud]]
+3. Java 低代码：[[jeecgboot--JeecgBoot]]
+4. Go 后台：[[flipped-aurora--gin-vue-admin]]
+5. ERP 业务套件：[[frappe--erpnext]]
+6. 数据库优先后台：[[directus--directus]]
+7. TS/Next 后台：[[payloadcms--payload]]
