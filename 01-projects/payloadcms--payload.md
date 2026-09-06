@@ -120,10 +120,13 @@ templates/
 - `packages/next`
 - `packages/ui`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/payloadcms--payload/monorepo-structure.md`
-- `02-reading-notes/payloadcms--payload/core-package-boundaries.md`
+- [[02-reading-notes/payloadcms--payload/monorepo-structure]]
+- [[02-reading-notes/payloadcms--payload/core-package-boundaries]]
+- [[monorepo]]
+- [[Monorepo Package]]
+- [[Turborepo]]
 
 ### 2. 再读集合配置和运行时模型
 
@@ -136,10 +139,14 @@ templates/
 - `templates/with-postgres`
 - `examples`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/payloadcms--payload/collections-and-fields.md`
-- `02-reading-notes/payloadcms--payload/access-control-and-hooks.md`
+- [[02-reading-notes/payloadcms--payload/collections-and-fields]]
+- [[02-reading-notes/payloadcms--payload/access-control-and-hooks]]
+- [[Metadata]]
+- [[schema]]
+- [[权限模型]]
+- [[API]]
 
 ### 3. 读 Next.js 集成和 Admin Panel
 
@@ -152,10 +159,13 @@ templates/
 - `packages/ui`
 - `templates/website`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/payloadcms--payload/nextjs-integration.md`
-- `02-reading-notes/payloadcms--payload/admin-panel-architecture.md`
+- [[02-reading-notes/payloadcms--payload/nextjs-integration]]
+- [[02-reading-notes/payloadcms--payload/admin-panel-architecture]]
+- [[Next.js]]
+- [[Admin Panel]]
+- [[Admin App]]
 
 ### 4. 读数据库和插件体系
 
@@ -170,10 +180,15 @@ templates/
 - `packages/plugin-form-builder`
 - `packages/plugin-mcp`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/payloadcms--payload/database-adapters.md`
-- `02-reading-notes/payloadcms--payload/plugin-system.md`
+- [[02-reading-notes/payloadcms--payload/database-adapters]]
+- [[02-reading-notes/payloadcms--payload/plugin-system]]
+- [[数据库适配器]]
+- [[插件体系]]
+- [[mongodb]]
+- [[postgresql]]
+- [[sqlite]]
 
 ## 核心问题清单
 

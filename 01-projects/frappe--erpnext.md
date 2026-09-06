@@ -1,4 +1,4 @@
----
+﻿---
 type: open-source-project
 status: active
 source: github
@@ -79,10 +79,13 @@ erpnext/
 - `erpnext/config`
 - `erpnext/setup`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/frappe--erpnext/frappe-app-structure.md`
-- `02-reading-notes/frappe--erpnext/hooks-and-events.md`
+- [[02-reading-notes/frappe--erpnext/frappe-app-structure]]
+- [[02-reading-notes/frappe--erpnext/hooks-and-events]]
+- [[Frappe App]]
+- [[Frappe Site]]
+- [[bench]]
 
 ### 2. 再读 DocType 模型
 
@@ -96,10 +99,13 @@ erpnext/
 - `erpnext/buying/doctype`
 - 每个 DocType 下的 `.json`、`.py`、`.js`、测试文件。
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/frappe--erpnext/doctype-model.md`
-- `02-reading-notes/frappe--erpnext/document-lifecycle.md`
+- [[02-reading-notes/frappe--erpnext/doctype-model]]
+- [[02-reading-notes/frappe--erpnext/document-lifecycle]]
+- [[DocType]]
+- [[Metadata]]
+- [[DocType Event]]
 
 ### 3. 选择一个业务闭环深读
 
@@ -112,11 +118,16 @@ erpnext/
 - Stock Entry -> Stock Ledger Entry -> GL Entry
 - BOM -> Work Order -> Job Card -> Stock Entry
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/frappe--erpnext/sales-to-cash.md`
-- `02-reading-notes/frappe--erpnext/procure-to-pay.md`
-- `02-reading-notes/frappe--erpnext/stock-ledger-and-gl.md`
+- [[02-reading-notes/frappe--erpnext/sales-to-cash]]
+- [[02-reading-notes/frappe--erpnext/procure-to-pay]]
+- [[02-reading-notes/frappe--erpnext/stock-ledger-and-gl]]
+- [[Selling]]
+- [[Buying]]
+- [[Stock]]
+- [[Accounting]]
+- [[database-transaction]]
 
 ## 核心问题清单
 

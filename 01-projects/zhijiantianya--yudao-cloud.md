@@ -80,10 +80,14 @@ yudao-cloud/
 - `yudao-server`
 - `yudao-framework`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/zhijiantianya--yudao-cloud/microservice-module-map.md`
-- `02-reading-notes/zhijiantianya--yudao-cloud/gateway-routing.md`
+- [[02-reading-notes/zhijiantianya--yudao-cloud/microservice-module-map]]
+- [[02-reading-notes/zhijiantianya--yudao-cloud/gateway-routing]]
+- [[Spring Cloud]]
+- [[Spring Cloud Gateway]]
+- [[Nacos]]
+- [[module-boundary-design-principles]]
 
 ### 2. 再读注册、配置、认证链路
 
@@ -96,10 +100,15 @@ yudao-cloud/
 - Security / Token / Redis 认证相关框架代码。
 - `system` 模块中的用户、角色、菜单、权限接口。
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/zhijiantianya--yudao-cloud/auth-through-gateway.md`
-- `02-reading-notes/zhijiantianya--yudao-cloud/nacos-config-map.md`
+- [[02-reading-notes/zhijiantianya--yudao-cloud/auth-through-gateway]]
+- [[02-reading-notes/zhijiantianya--yudao-cloud/nacos-config-map]]
+- [[Spring Security]]
+- [[Token]]
+- [[SSO]]
+- [[多端认证]]
+- [[权限模型]]
 
 ### 3. 选择一个跨服务业务流程
 

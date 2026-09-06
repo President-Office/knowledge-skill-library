@@ -84,10 +84,13 @@ ruoyi-vue-pro/
 - `yudao-server`
 - `yudao-ui`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/zhijiantianya--ruoyi-vue-pro/maven-module-structure.md`
-- `02-reading-notes/zhijiantianya--ruoyi-vue-pro/startup-flow.md`
+- [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/maven-module-structure]]
+- [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/startup-flow]]
+- [[Maven]]
+- [[Spring Boot]]
+- [[module-boundary-design-principles]]
 
 ### 2. 再读系统基础能力
 
@@ -99,11 +102,15 @@ ruoyi-vue-pro/
 - `yudao-module-infra`
 - `yudao-framework`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/zhijiantianya--ruoyi-vue-pro/rbac-and-menu.md`
-- `02-reading-notes/zhijiantianya--ruoyi-vue-pro/tenant-model.md`
-- `02-reading-notes/zhijiantianya--ruoyi-vue-pro/codegen-flow.md`
+- [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/rbac-and-menu]]
+- [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/tenant-model]]
+- [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/codegen-flow]]
+- [[RBAC]]
+- [[数据权限]]
+- [[多租户]]
+- [[代码生成]]
 
 ### 3. 选择一个业务模块深读
 
@@ -116,12 +123,17 @@ ruoyi-vue-pro/
 - `yudao-module-bpm`：Flowable 工作流接入。
 - `yudao-module-crm`：业务对象、跟进、客户关系。
 
-输出笔记：
+关联知识节点：
 
-- 业务模块主流程调用链。
-- 数据模型和表关系。
-- API 到 Service 到 Mapper 的路径。
-- 可复用到自己项目的工程模式。
+- [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/business-module-flow]]
+- [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/data-model-and-table-relations]]
+- [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/api-service-mapper-path]]
+- [[支付]]
+- [[Mall]]
+- [[crm]]
+- [[工作流]]
+- [[database]]
+- [[API]]
 
 ## 核心问题清单
 

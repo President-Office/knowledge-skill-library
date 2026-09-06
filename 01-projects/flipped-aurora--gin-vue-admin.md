@@ -158,10 +158,14 @@ main()
 - `server/router`
 - `server/middleware`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/flipped-aurora--gin-vue-admin/server-startup-flow.md`
-- `02-reading-notes/flipped-aurora--gin-vue-admin/go-project-structure.md`
+- [[02-reading-notes/flipped-aurora--gin-vue-admin/server-startup-flow]]
+- [[02-reading-notes/flipped-aurora--gin-vue-admin/go-project-structure]]
+- [[Gin]]
+- [[Viper]]
+- [[Zap]]
+- [[GORM]]
 
 ### 2. 再读权限和登录体系
 
@@ -176,10 +180,14 @@ main()
 - `web/src/router`
 - `web/src/permission.js`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/flipped-aurora--gin-vue-admin/auth-rbac-casbin.md`
-- `02-reading-notes/flipped-aurora--gin-vue-admin/dynamic-router-permission.md`
+- [[02-reading-notes/flipped-aurora--gin-vue-admin/auth-rbac-casbin]]
+- [[02-reading-notes/flipped-aurora--gin-vue-admin/dynamic-router-permission]]
+- [[JWT]]
+- [[Casbin]]
+- [[RBAC]]
+- [[权限模型]]
 
 ### 3. 读代码生成和表单生成
 
@@ -193,10 +201,13 @@ main()
 - `web/src/components`
 - `web/src/api`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/flipped-aurora--gin-vue-admin/codegen-flow.md`
-- `02-reading-notes/flipped-aurora--gin-vue-admin/form-generator.md`
+- [[02-reading-notes/flipped-aurora--gin-vue-admin/codegen-flow]]
+- [[02-reading-notes/flipped-aurora--gin-vue-admin/form-generator]]
+- [[代码生成]]
+- [[Form Builder]]
+- [[schema]]
 
 ### 4. 读 AI/[[MCP]] 接入
 
@@ -211,9 +222,12 @@ main()
 - `.claude`
 - `.cursor`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/flipped-aurora--gin-vue-admin/ai-assisted-development.md`
+- [[02-reading-notes/flipped-aurora--gin-vue-admin/ai-assisted-development]]
+- [[MCP]]
+- [[AI Skills]]
+- [[AI]]
 
 ## 核心问题清单
 

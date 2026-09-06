@@ -89,10 +89,13 @@ tests/     # 测试
 - `app/package.json`
 - `sdk/package.json`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/directus--directus/monorepo-structure.md`
-- `02-reading-notes/directus--directus/runtime-entrypoints.md`
+- [[02-reading-notes/directus--directus/monorepo-structure]]
+- [[02-reading-notes/directus--directus/runtime-entrypoints]]
+- [[monorepo]]
+- [[Monorepo Package]]
+- [[CLI]]
 
 ### 2. 再读数据库优先模型
 
@@ -104,10 +107,14 @@ tests/     # 测试
 - `packages`
 - 数据模型、schema、权限、迁移相关模块。
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/directus--directus/database-first-model.md`
-- `02-reading-notes/directus--directus/metadata-and-permissions.md`
+- [[02-reading-notes/directus--directus/database-first-model]]
+- [[02-reading-notes/directus--directus/metadata-and-permissions]]
+- [[Database-first]]
+- [[Metadata]]
+- [[schema]]
+- [[权限模型]]
 
 ### 3. 读 [[Admin App]] 和 [[SDK]]
 
@@ -119,10 +126,14 @@ tests/     # 测试
 - `sdk/src`
 - `api/src`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/directus--directus/admin-app-architecture.md`
-- `02-reading-notes/directus--directus/sdk-and-api-contract.md`
+- [[02-reading-notes/directus--directus/admin-app-architecture]]
+- [[02-reading-notes/directus--directus/sdk-and-api-contract]]
+- [[Admin App]]
+- [[API]]
+- [[SDK]]
+- [[Vue]]
 
 ### 4. 读扩展机制
 
@@ -134,9 +145,13 @@ tests/     # 测试
 - `api/src`
 - `app/src`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/directus--directus/extension-system.md`
+- [[02-reading-notes/directus--directus/extension-system]]
+- [[插件体系]]
+- [[Monorepo Package]]
+- [[API]]
+- [[Admin App]]
 
 ## 核心问题清单
 

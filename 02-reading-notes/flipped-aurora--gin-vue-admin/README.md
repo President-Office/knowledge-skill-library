@@ -3,20 +3,17 @@
 项目主卡：[[flipped-aurora--gin-vue-admin]]
 特点卡：[[gin-vue-admin]]
 
-## 已有笔记
+## 阅读主题网络
 
-| 顺序 | 主题 | 状态 | 笔记 |
-| --- | --- | --- | --- |
-| 1 | Go 后端项目结构 | 初稿 | [[go-project-structure]] |
-
-## 后续主题
-
-- 后端启动链路
-- JWT / RBAC / Casbin 权限
-- 前端动态路由和权限
-- 代码生成器
-- 表单生成器
-- AI / MCP 辅助开发
+| 主题 | 关联源码入口 | 关键概念 |
+| --- | --- | --- |
+| [[go-project-structure]] | `server`、`web` | [[Go]]、[[Gin]]、[[GORM]] |
+| [[02-reading-notes/flipped-aurora--gin-vue-admin/server-startup-flow]] | `server/main.go`、`server/core`、`server/initialize` | [[Gin]]、[[Viper]]、[[Zap]]、[[GORM]] |
+| [[02-reading-notes/flipped-aurora--gin-vue-admin/auth-rbac-casbin]] | `server/middleware`、`server/model/system`、`server/service/system` | [[JWT]]、[[Casbin]]、[[RBAC]]、[[权限模型]] |
+| [[02-reading-notes/flipped-aurora--gin-vue-admin/dynamic-router-permission]] | `web/src/router`、`web/src/permission.js` | [[Vue Router]]、[[RBAC]]、[[权限模型]] |
+| [[02-reading-notes/flipped-aurora--gin-vue-admin/codegen-flow]] | `server/service/system`、`web/src/view`、`web/src/api` | [[代码生成]]、[[schema]]、[[API]] |
+| [[02-reading-notes/flipped-aurora--gin-vue-admin/form-generator]] | `web/src/components`、`web/src/view` | [[Form Builder]]、[[Element Plus]] |
+| [[02-reading-notes/flipped-aurora--gin-vue-admin/ai-assisted-development]] | `AGENT.MD`、`aiDoc`、`server/mcp` | [[AI]]、[[MCP]]、[[AI Skills]] |
 
 ## 当前问题
 

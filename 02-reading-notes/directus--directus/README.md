@@ -3,20 +3,17 @@
 项目主卡：[[directus--directus]]
 特点卡：[[directus]]
 
-## 已有笔记
+## 阅读主题网络
 
-| 顺序 | 主题 | 状态 | 笔记 |
-| --- | --- | --- | --- |
-| 1 | Monorepo 结构 | 初稿 | [[02-reading-notes/directus--directus/monorepo-structure]] |
-
-## 后续主题
-
-- 运行入口
-- 数据库优先模型
-- 元数据和权限
-- [[Admin App]] 架构
-- [[SDK]] 和 [[API]] 契约
-- 扩展系统
+| 主题 | 关联源码入口 | 关键概念 |
+| --- | --- | --- |
+| [[02-reading-notes/directus--directus/monorepo-structure]] | `api`、`app`、`sdk`、`packages`、`pnpm-workspace.yaml` | [[monorepo]]、[[Monorepo Package]]、[[pnpm workspace]] |
+| [[02-reading-notes/directus--directus/runtime-entrypoints]] | `directus`、`api`、`package.json` | [[CLI]]、[[Node.js]]、[[API]] |
+| [[02-reading-notes/directus--directus/database-first-model]] | `api/src`、`packages` | [[Database-first]]、[[schema]]、[[database]] |
+| [[02-reading-notes/directus--directus/metadata-and-permissions]] | metadata、collections、fields、permissions 相关模块 | [[Metadata]]、[[权限模型]]、[[Admin Panel]] |
+| [[02-reading-notes/directus--directus/admin-app-architecture]] | `app/src` | [[Admin App]]、[[Vue]]、[[Vite]] |
+| [[02-reading-notes/directus--directus/sdk-and-api-contract]] | `sdk/src`、`api/src` | [[SDK]]、[[API]]、[[REST]]、[[GraphQL]] |
+| [[02-reading-notes/directus--directus/extension-system]] | `packages`、`api/src`、`app/src` | [[插件体系]]、[[Monorepo Package]]、[[machine-readable-software-systems]] |
 
 ## 当前问题
 

@@ -3,20 +3,14 @@
 项目主卡：[[zhijiantianya--yudao-cloud]]
 特点卡：[[yudao-cloud]]
 
-## 已有笔记
+## 阅读主题网络
 
-| 顺序 | 主题 | 状态 | 笔记 |
-| --- | --- | --- | --- |
-| 1 | 微服务模块地图 | 初稿 | [[microservice-module-map]] |
-
-## 后续主题
-
-- Gateway 路由与入口
-- Nacos 配置与服务发现
-- Gateway 到业务服务的认证链路
-- 系统服务、基础设施服务边界
-- Seata / MQ / XXL-Job 使用点
-- 单体版模块到 Cloud 版模块映射
+| 主题 | 关联源码入口 | 关键概念 |
+| --- | --- | --- |
+| [[microservice-module-map]] | 各 `yudao-*` 服务 | [[Spring Cloud]]、[[module-boundary-design-principles]] |
+| [[02-reading-notes/zhijiantianya--yudao-cloud/gateway-routing]] | `yudao-gateway`、网关配置 | [[Spring Cloud Gateway]]、[[Nacos]]、[[API]] |
+| [[02-reading-notes/zhijiantianya--yudao-cloud/auth-through-gateway]] | Gateway、system 服务、token 配置 | [[Spring Security]]、[[Token]]、[[权限模型]] |
+| [[02-reading-notes/zhijiantianya--yudao-cloud/nacos-config-map]] | Nacos 配置、服务注册配置 | [[Nacos]]、[[Spring Cloud Alibaba]]、[[Sentinel]]、[[Seata]] |
 
 ## 当前问题
 

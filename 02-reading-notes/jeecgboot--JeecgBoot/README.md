@@ -3,20 +3,17 @@
 项目主卡：[[jeecgboot--JeecgBoot]]
 特点卡：[[jeecgboot]]
 
-## 已有笔记
+## 阅读主题网络
 
-| 顺序 | 主题 | 状态 | 笔记 |
-| --- | --- | --- | --- |
-| 1 | Maven 多模块结构 | 初稿 | [[02-reading-notes/jeecgboot--JeecgBoot/maven-module-structure]] |
-
-## 后续主题
-
-- 后端启动链路
-- Shiro / JWT 权限体系
-- 菜单和前端路由
-- 代码生成流程
-- 在线表单和报表
-- AI Skills 和 MCP
+| 主题 | 关联源码入口 | 关键概念 |
+| --- | --- | --- |
+| [[02-reading-notes/jeecgboot--JeecgBoot/maven-module-structure]] | `jeecg-boot/pom.xml`、`jeecg-boot-base-core`、`jeecg-module-system` | [[Maven]]、[[Spring Boot]]、[[module-boundary-design-principles]] |
+| [[02-reading-notes/jeecgboot--JeecgBoot/backend-startup-flow]] | `jeecg-boot`、`jeecg-module-system` | [[Spring Boot]]、[[MyBatis Plus]] |
+| [[02-reading-notes/jeecgboot--JeecgBoot/auth-shiro-jwt]] | `jeecg-module-system`、`jeecg-boot-base-core` | [[Shiro]]、[[JWT]]、[[RBAC]] |
+| [[02-reading-notes/jeecgboot--JeecgBoot/menu-and-router]] | `jeecgboot-vue3/src`、系统菜单模块 | [[Vue Router]]、[[权限模型]] |
+| [[02-reading-notes/jeecgboot--JeecgBoot/codegen-flow]] | 代码生成模块、前端页面生成入口 | [[jeecg codegenerate]]、[[代码生成]] |
+| [[02-reading-notes/jeecgboot--JeecgBoot/online-form-and-report]] | 在线表单、JimuReport/JimuBI 集成 | [[Form Builder]]、[[JimuReport]]、[[JimuBI]] |
+| [[02-reading-notes/jeecgboot--JeecgBoot/ai-skills-and-mcp]] | `README-AI.md`、AI/MCP 相关模块 | [[AI Skills]]、[[MCP]]、[[AI Flow]] |
 
 ## 当前问题
 

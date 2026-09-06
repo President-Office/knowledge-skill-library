@@ -3,19 +3,18 @@
 项目主卡：[[zhijiantianya--ruoyi-vue-pro]]
 特点卡：[[ruoyi-vue-pro]]
 
-## 已有笔记
+## 阅读主题网络
 
-| 顺序 | 主题 | 状态 | 笔记 |
-| --- | --- | --- | --- |
-| 1 | Maven 多模块结构 | 初稿 | [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/maven-module-structure]] |
-
-## 后续主题
-
-- 启动流程
-- 系统权限与菜单
-- 多租户模型
-- 代码生成流程
-- 支付模块
+| 主题 | 关联源码入口 | 关键概念 |
+| --- | --- | --- |
+| [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/maven-module-structure]] | 根 `pom.xml`、`yudao-framework`、`yudao-module-*` | [[Maven]]、[[module-boundary-design-principles]] |
+| [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/startup-flow]] | `yudao-server`、`yudao-framework` | [[Spring Boot]]、[[MyBatis Plus]] |
+| [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/rbac-and-menu]] | `yudao-module-system`、`yudao-ui` | [[RBAC]]、[[权限模型]]、[[Vue Router]] |
+| [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/tenant-model]] | 租户相关拦截器、配置和表结构 | [[多租户]]、[[SaaS]]、[[数据权限]] |
+| [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/codegen-flow]] | `yudao-module-infra`、代码生成入口 | [[代码生成]]、[[schema]] |
+| [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/business-module-flow]] | `pay`、`mall`、`bpm`、`crm` 模块 | [[支付]]、[[Mall]]、[[工作流]]、[[crm]] |
+| [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/data-model-and-table-relations]] | `sql`、各模块 DO/Mapper | [[database]]、[[schema]]、[[orm]] |
+| [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/api-service-mapper-path]] | Controller、Service、Mapper | [[API]]、[[boundaries]]、[[abstractions]] |
 
 ## 当前问题
 

@@ -99,10 +99,13 @@ jeecgboot-vue3/
 - `jeecg-boot/jeecg-boot-module`
 - `jeecg-boot/jeecg-server-cloud`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/jeecgboot--JeecgBoot/maven-module-structure.md`
-- `02-reading-notes/jeecgboot--JeecgBoot/backend-startup-flow.md`
+- [[02-reading-notes/jeecgboot--JeecgBoot/maven-module-structure]]
+- [[02-reading-notes/jeecgboot--JeecgBoot/backend-startup-flow]]
+- [[Maven]]
+- [[Spring Boot]]
+- [[module-boundary-design-principles]]
 
 ### 2. 再读权限、菜单和租户/组织模型
 
@@ -114,10 +117,14 @@ jeecgboot-vue3/
 - `jeecg-boot/jeecg-boot-base-core`
 - `jeecgboot-vue3/src`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/jeecgboot--JeecgBoot/auth-shiro-jwt.md`
-- `02-reading-notes/jeecgboot--JeecgBoot/menu-and-router.md`
+- [[02-reading-notes/jeecgboot--JeecgBoot/auth-shiro-jwt]]
+- [[02-reading-notes/jeecgboot--JeecgBoot/menu-and-router]]
+- [[Shiro]]
+- [[JWT]]
+- [[RBAC]]
+- [[权限模型]]
 
 ### 3. 深读代码生成和低代码能力
 
@@ -131,11 +138,17 @@ jeecgboot-vue3/
 - `README-AI.md`
 - `jeecgboot-vue3/src`
 
-输出笔记：
+关联知识节点：
 
-- `02-reading-notes/jeecgboot--JeecgBoot/codegen-flow.md`
-- `02-reading-notes/jeecgboot--JeecgBoot/online-form-and-report.md`
-- `02-reading-notes/jeecgboot--JeecgBoot/ai-skills-and-mcp.md`
+- [[02-reading-notes/jeecgboot--JeecgBoot/codegen-flow]]
+- [[02-reading-notes/jeecgboot--JeecgBoot/online-form-and-report]]
+- [[02-reading-notes/jeecgboot--JeecgBoot/ai-skills-and-mcp]]
+- [[代码生成]]
+- [[Form Builder]]
+- [[JimuReport]]
+- [[JimuBI]]
+- [[AI Skills]]
+- [[MCP]]
 
 ## 核心问题清单
 

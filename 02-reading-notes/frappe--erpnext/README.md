@@ -3,20 +3,17 @@
 项目主卡：[[frappe--erpnext]]
 特点卡：[[erpnext]]
 
-## 已有笔记
+## 阅读主题网络
 
-| 顺序 | 主题 | 状态 | 笔记 |
-| --- | --- | --- | --- |
-| 1 | Frappe app 结构 | 初稿 | [[frappe-app-structure]] |
-
-## 后续主题
-
-- hooks 与事件机制
-- DocType 元数据模型
-- Document 生命周期
-- Sales to Cash
-- Procure to Pay
-- Stock Ledger 与 GL Entry
+| 主题 | 关联源码入口 | 关键概念 |
+| --- | --- | --- |
+| [[frappe-app-structure]] | `pyproject.toml`、`erpnext/hooks.py`、`erpnext/modules.txt` | [[Frappe App]]、[[Frappe Site]]、[[bench]] |
+| [[02-reading-notes/frappe--erpnext/hooks-and-events]] | `erpnext/hooks.py`、`erpnext/patches` | [[DocType Event]]、[[Scheduler Event]]、[[patches]] |
+| [[02-reading-notes/frappe--erpnext/doctype-model]] | `erpnext/*/doctype` | [[DocType]]、[[Metadata]]、[[JSON]] |
+| [[02-reading-notes/frappe--erpnext/document-lifecycle]] | `erpnext/controllers`、核心 doctype 控制器 | [[DocType Event]]、[[database-transaction]] |
+| [[02-reading-notes/frappe--erpnext/sales-to-cash]] | `selling`、`stock`、`accounts` | [[Selling]]、[[Stock]]、[[Accounting]] |
+| [[02-reading-notes/frappe--erpnext/procure-to-pay]] | `buying`、`stock`、`accounts` | [[Buying]]、[[Stock]]、[[Accounting]] |
+| [[02-reading-notes/frappe--erpnext/stock-ledger-and-gl]] | `stock`、`accounts` | [[Stock]]、[[Accounting]]、[[OLTP]] |
 
 ## 当前问题
 
