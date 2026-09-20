@@ -20,6 +20,14 @@ AI 让实现变便宜了，但没有让错误抽象变便宜。
 
 **AI 时代更应该设计，但设计的重点是把确定复杂性处理好，而不是为想象中的变化提前支付复杂度。**
 
+## 为什么需要组织级约束
+
+软件工程思想并不是人类不知道，而是人在进度、压力、人员流动和局部目标下，容易逐步放弃它们：先跳过测试，再复制规则；先绕过边界，再把临时方案固化；先扩大权限，再忘记回收。这个过程不一定来自恶意，而是工程系统缺少持续提醒、验证和反馈。
+
+AI 改变了一个关键条件：过去因为时间和人力太贵而被放弃的设计、测试、重构、文档和审查，现在可以由 Agent 以更低成本持续执行。于是 SOLID、DRY、KISS、YAGNI、Fail Fast、Measure First 和 Least Privilege 不应只停留在书本或个人习惯里，而应被写成仓库规则、工作流、模板、检查项和可回读的验证结果。
+
+这不是把 AI 当成“自动架构师”，而是让 AI 承担重复执行和证据收集，让人负责边界、取舍、风险和最终责任。工程纪律因此从“理想做法”变成可以反复执行的组织能力。
+
 ## AI 改变了什么
 
 AI 最直接降低的是实现成本：
@@ -186,6 +194,14 @@ AI 最直接降低的是实现成本：
 - [[boundaries]]
 - [[abstractions]]
 - [[solid]]
+- [[dry]]
+- [[kiss]]
+- [[yagni]]
+- [[composition]]
+- [[separation-of-concerns]]
+- [[fail-fast]]
+- [[measure-first]]
+- [[least-privilege]]
 - [[object-oriented-abstraction]]
 - [[interface-class-abstract-class]]
 - [[database]]

@@ -15,7 +15,7 @@ updated: 2026-07-02
 
 | 层次 | 关注问题 | 笔记 |
 | --- | --- | --- |
-| 工程思想 | 如何判断代码和模块是否容易变化、扩展、测试 | [[solid]] |
+| 工程思想 | 如何判断代码和模块是否容易变化、扩展、测试 | [[solid]]、[[dry]]、[[kiss]]、[[yagni]] |
 | 单一职责 | 一个模块应该只有一个主要变化原因 | [[single-responsibility-principle]] |
 | 模块边界设计 | 什么时候放在一个模块里，什么时候拆成模块、服务或仓库 | [[module-boundary-design-principles]] |
 | 开闭原则 | 如何让新增能力尽量通过扩展完成 | [[open-closed-principle]] |
@@ -23,6 +23,11 @@ updated: 2026-07-02
 | 接口隔离 | 如何避免接口强迫调用方依赖不用的方法 | [[interface-segregation-principle]] |
 | 依赖倒置 | 如何让核心业务依赖抽象而不是基础设施细节 | [[dependency-inversion-principle]] |
 | LSP 与 DIP | 为什么依赖抽象和可靠替换不矛盾 | [[lsp-vs-dip]] |
+| 组合 | 如何通过组合小能力构建可替换的系统 | [[composition]] |
+| 关注点分离 | 如何隔离不同变化原因、数据责任和权限边界 | [[separation-of-concerns]] |
+| 尽早失败 | 如何在错误扩散前验证输入、权限和前置条件 | [[fail-fast]] |
+| 先度量再优化 | 如何用基线和证据决定优化是否值得 | [[measure-first]] |
+| 最小权限 | 如何把用户、Agent、服务和 CI 的权限限制在必要范围 | [[least-privilege]] |
 | AI 时代的设计尺度 | AI 降低实现成本后，如何在设计质量和不过度设计之间取舍 | [[ai-era-engineering-design-scale]] |
 | 机器可理解的软件系统 | 为什么实现会变便宜，而机器可读元数据、数据层和工作流会变贵 | [[machine-readable-software-systems]] |
 | 架构观 | 为什么架构只是理解系统的入口，不是学习终点 | [[architecture-as-wedge]] |
@@ -84,7 +89,7 @@ updated: 2026-07-02
 | 目录 | 内容 |
 | --- | --- |
 | `architecture/` | 架构观、AI 时代的设计尺度、机器可理解的软件系统、边界、抽象 |
-| `design-principles/` | SOLID、SRP/OCP/LSP/ISP/DIP、LSP vs DIP、模块边界设计 |
+| `design-principles/` | SOLID、DRY、KISS、YAGNI、组合、关注点分离、Fail Fast、Measure First、Least Privilege，以及 SRP/OCP/LSP/ISP/DIP 和模块边界设计 |
 | `oop/` | 结构体、对象、类、接口、抽象类、封装、继承、多态 |
 | `data/` | 数据库基础、SQL、ORM、schema、表、列、行、键、约束、索引、事务、OLTP/OLAP |
 | `data/databases/` | MySQL、PostgreSQL、Redis、ClickHouse 等具体数据库 |
