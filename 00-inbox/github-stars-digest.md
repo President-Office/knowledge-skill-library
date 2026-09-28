@@ -78,3 +78,103 @@ GitHub API 返回本周新增（按 `starred_at` 倒序）：
 - 本地工作区同步：`git pull --ff-only origin main` 成功，原工作区无未提交变更。
 - 敏感信息检查：报告未写入 token、密码、cookie、会话文件或本地凭据。
 - 事实边界：首次运行没有上一版报告，因此未声称任何跨周增量；无法读取 Release 的项目已明确标注。
+
+<!-- BEGIN GITHUB_STARS_ACTIONS -->
+## GitHub Actions 自动检查快照
+
+> 本区块由 GitHub Actions 维护；上方分类、判断和手工笔记不会被自动覆盖。
+
+- Starred 项目：101（公开 101，私有 0）
+- 最近 7 天新增公开项目：28
+- 最近 7 天新增私有项目：0（私有仓库名称不写入公开仓库）
+- 最近 7 天有活动的公开项目：40
+- 最近 7 天有活动的私有项目：0（仅统计数量）
+
+### 最近新增公开 starred
+
+- [paperclipai/paperclip](https://github.com/paperclipai/paperclip)
+- [theBigGavin/marketingdashboard](https://github.com/theBigGavin/marketingdashboard)
+- [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)
+- [simonlin1212/vibe-astock](https://github.com/simonlin1212/vibe-astock)
+- [ccxt/ccxt](https://github.com/ccxt/ccxt)
+- [stefan-jansen/zipline-reloaded](https://github.com/stefan-jansen/zipline-reloaded)
+- [mementum/backtrader](https://github.com/mementum/backtrader)
+- [je-suis-tm/quant-trading](https://github.com/je-suis-tm/quant-trading)
+- [stefan-jansen/machine-learning-for-trading](https://github.com/stefan-jansen/machine-learning-for-trading)
+- [wilsonfreitas/awesome-quant](https://github.com/wilsonfreitas/awesome-quant)
+- [wangzhe3224/awesome-systematic-trading](https://github.com/wangzhe3224/awesome-systematic-trading)
+- [lukeTheNeuromancer/agentic-ai-system-design-primer-zh](https://github.com/lukeTheNeuromancer/agentic-ai-system-design-primer-zh)
+- [ix-infrastructure/Ix](https://github.com/ix-infrastructure/Ix)
+- [pallavi-shekhar/ai-engineering-interview-questions-company-wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise)
+- [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)
+- [liangdabiao/easy_investment_Agent_crewai](https://github.com/liangdabiao/easy_investment_Agent_crewai)
+- [Yinsongxu/LLM2Jev](https://github.com/Yinsongxu/LLM2Jev)
+- [TNT-Likely/PanWatch](https://github.com/TNT-Likely/PanWatch)
+- [CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot)
+- [LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat)
+- [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
+- [typesafe-ai/skills](https://github.com/typesafe-ai/skills)
+- [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)
+- [simonlin1212/TradingAgents-astock](https://github.com/simonlin1212/TradingAgents-astock)
+- [jundizhou/easy-stock](https://github.com/jundizhou/easy-stock)
+- [malevrigns/agent-jev](https://github.com/malevrigns/agent-jev)
+- [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev)
+- [yibie/jev-engineering-zh](https://github.com/yibie/jev-engineering-zh)
+
+### 最近活动公开项目
+
+| 项目 | 最近提交 | 最新 Release | 近 7 天 Issue/PR |
+| --- | --- | --- | --- |
+| [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 2026-09-28 `403794ea` | `v1.3.7` 2026-09-13 | 5 / 38 |
+| [ClickHouse/ClickHouse](https://github.com/ClickHouse/ClickHouse) | 2026-09-28 `ac699e16` | `v26.9.4.3-stable` 2026-09-27 | 31 / 69 |
+| [LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat) | 2026-09-28 `c8c5478c` | 无 | 16 / 84 |
+| [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | 2026-09-28 `2cf62bae` | `v0.20.0` 2026-09-27 | 9 / 16 |
+| [ix-infrastructure/Ix](https://github.com/ix-infrastructure/Ix) | 2026-09-27 `7ef7f89d` | `v0.11.0` 2026-09-26 | 3 / 48 |
+| [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) | 2026-09-27 `95ba6ae7` | 无 | 6 / 49 |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 2026-09-27 `738c8472` | 无 | 21 / 79 |
+| [public-apis/public-apis](https://github.com/public-apis/public-apis) | 2026-09-27 `7598f906` | 无 | 0 / 100 |
+| [mutonby/openshorts](https://github.com/mutonby/openshorts) | 2026-09-27 `89f03093` | 无 | 6 / 2 |
+| [ccxt/ccxt](https://github.com/ccxt/ccxt) | 2026-09-27 `deb97caa` | `v4.5.84` 2026-09-24 | 13 / 87 |
+| [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | 2026-09-27 `2d0285ab` | `career-ops-v1.34.0` 2026-09-24 | 37 / 63 |
+| [Lingtai-AI/lingtai](https://github.com/Lingtai-AI/lingtai) | 2026-09-27 `f3a459ac` | `v1.0.10` 2026-09-27 | 1 / 6 |
+| [TNT-Likely/PanWatch](https://github.com/TNT-Likely/PanWatch) | 2026-09-27 `5ebd90ad` | `0.15.0` 2026-09-25 | 2 / 20 |
+| [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | 2026-09-27 `08a1592e` | `v0.5.6` 2026-09-23 | 37 / 63 |
+| [eternity4719/HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter) | 2026-09-27 `24e3d67e` | `epub-latest` 2026-09-18 | 17 / 1 |
+| [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 2026-09-27 `d3fee51a` | `v3.32.0` 2026-09-06 | 11 / 21 |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 2026-09-27 `fd914595` | `v1.24.0` 2026-09-25 | 36 / 64 |
+| [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 2026-09-27 `0f14d261` | `v2026.916.1` 2026-09-21 | 28 / 72 |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 2026-09-27 `09170eec` | `v2.15.0` 2026-08-13 | 3 / 6 |
+| [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) | 2026-09-27 `2ac9084a` | 无 | 0 / 28 |
+| [moorcheh-ai/memanto](https://github.com/moorcheh-ai/memanto) | 2026-09-27 `2265a013` | `v0.2.23` 2026-09-24 | 3 / 95 |
+| [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | 2026-09-27 `59dc4f04` | 无 | 1 / 7 |
+| [CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot) | 2026-09-27 `ca8d51c3` | `v0.0.15` 2026-09-22 | 5 / 50 |
+| [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) | 2026-09-27 `c3352738` | 无 | 9 / 20 |
+| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | 2026-09-27 `3c301956` | 无 | 0 / 100 |
+| [gaogaotiantian/viztracer](https://github.com/gaogaotiantian/viztracer) | 2026-09-26 `75a662d6` | `1.1.1` 2025-11-10 | 2 / 3 |
+| [jundizhou/easy-stock](https://github.com/jundizhou/easy-stock) | 2026-09-26 `bd47fc3d` | `v1.2.2` 2026-09-22 | 0 / 1 |
+| [ollama/ollama](https://github.com/ollama/ollama) | 2026-09-26 `16b4376a` | `v0.34.4` 2026-09-23 | 32 / 68 |
+| [Yinsongxu/LLM2Jev](https://github.com/Yinsongxu/LLM2Jev) | 2026-09-26 `a4aafa85` | 无 | 1 / 1 |
+| [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 2026-09-26 `e40a45ec` | `v0.16.2` 2026-09-08 | 2 / 3 |
+| [hypit-ai/hypit](https://github.com/hypit-ai/hypit) | 2026-09-26 `557497b3` | `v0.2.16` 2026-09-26 | 11 / 30 |
+| [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | 2026-09-26 `4f570385` | `v2.1.160` 2026-06-02 | 1 / 2 |
+| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 2026-09-26 `dc676965` | 无 | 5 / 18 |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 2026-09-26 `2686b620` | `0.6.11` 2026-09-26 | 11 / 37 |
+| [bojieli/ai-infra-book](https://github.com/bojieli/ai-infra-book) | 2026-09-26 `56ecb425` | `build-20260923-204840` 2026-09-23 | 0 / 11 |
+| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | 2026-09-25 `e87bb897` | `v0.0.82` 2026-09-18 | 9 / 3 |
+| [github/spec-kit](https://github.com/github/spec-kit) | 2026-09-25 `c00dc055` | `v1.0.12` 2026-09-25 | 39 / 61 |
+| [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | 2026-09-25 `e0d4d756` | `v0.4.15` 2026-08-23 | 3 / 9 |
+| [lukeTheNeuromancer/agentic-ai-system-design-primer-zh](https://github.com/lukeTheNeuromancer/agentic-ai-system-design-primer-zh) | 2026-09-25 `43e4937a` | 无 | 0 / 0 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | 2026-09-25 `68253fc2` | `4.0` 2023-01-05 | 5 / 28 |
+
+### Sources checked
+
+- GitHub REST API `user/starred`（含私有项目；私有名称和详情不写入此公开报告）。
+- 公开 starred 项目的仓库元数据、最近提交、最新 Release 和近 7 天 Issue/PR。
+- 私有项目只保留数量统计，避免把私有信息发布到公开仓库。
+
+### Validation
+
+- GitHub Actions workflow 执行 `git diff --check`。
+- 只有快照发生实质变化时才提交，避免无变化噪声提交。
+- 推送后通过 GitHub Contents API 回读远端文件 SHA。
+<!-- END GITHUB_STARS_ACTIONS -->

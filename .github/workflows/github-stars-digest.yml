@@ -1,0 +1,66 @@
+name: GitHub Stars Digest
+
+on:
+  schedule:
+    # 09:00 Asia/Shanghai is 01:00 UTC.
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-stars-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ secrets.STARS_GITHUB_TOKEN }}
+      DIGEST_REPOSITORY: ${{ github.repository }}
+      DIGEST_PATH: 00-inbox/github-stars-digest.md
+    steps:
+      - name: Check out the knowledge library
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh the stars snapshot
+        run: python .github/scripts/github_stars_digest.py
+
+      - name: Validate the change
+        run: git diff --check
+
+      - name: Commit and push when the snapshot changed
+        id: commit
+        shell: bash
+        run: |
+          if git diff --quiet -- "$DIGEST_PATH"; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No material stars digest change."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DIGEST_PATH"
+          git commit -m "chore: refresh GitHub stars digest"
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Verify the remote file
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          sha="$(gh api "repos/${GITHUB_REPOSITORY}/contents/${DIGEST_PATH}?ref=main" --jq .sha)"
+          test -n "$sha"
+          echo "Verified remote digest blob: ${sha:0:12}"
