@@ -125,13 +125,13 @@ GitHub API 返回本周新增（按 `starred_at` 倒序）：
 
 | 项目 | 最近提交 | 最新 Release | 近 7 天 Issue/PR |
 | --- | --- | --- | --- |
-| [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 2026-09-28 `403794ea` | `v1.3.7` 2026-09-13 | 5 / 38 |
+| [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 2026-09-28 `80e86017` | `v1.3.7` 2026-09-13 | 5 / 39 |
 | [ClickHouse/ClickHouse](https://github.com/ClickHouse/ClickHouse) | 2026-09-28 `ac699e16` | `v26.9.4.3-stable` 2026-09-27 | 31 / 69 |
-| [LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat) | 2026-09-28 `c8c5478c` | 无 | 16 / 84 |
+| [LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat) | 2026-09-28 `c8c5478c` | 无 | 15 / 85 |
 | [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | 2026-09-28 `2cf62bae` | `v0.20.0` 2026-09-27 | 9 / 16 |
 | [ix-infrastructure/Ix](https://github.com/ix-infrastructure/Ix) | 2026-09-27 `7ef7f89d` | `v0.11.0` 2026-09-26 | 3 / 48 |
 | [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) | 2026-09-27 `95ba6ae7` | 无 | 6 / 49 |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 2026-09-27 `738c8472` | 无 | 21 / 79 |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 2026-09-27 `738c8472` | 无 | 19 / 81 |
 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | 2026-09-27 `7598f906` | 无 | 0 / 100 |
 | [mutonby/openshorts](https://github.com/mutonby/openshorts) | 2026-09-27 `89f03093` | 无 | 6 / 2 |
 | [ccxt/ccxt](https://github.com/ccxt/ccxt) | 2026-09-27 `deb97caa` | `v4.5.84` 2026-09-24 | 13 / 87 |
