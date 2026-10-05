@@ -84,87 +84,109 @@ GitHub API 返回本周新增（按 `starred_at` 倒序）：
 
 > 本区块由 GitHub Actions 维护；上方分类、判断和手工笔记不会被自动覆盖。
 
-- Starred 项目：101（公开 101，私有 0）
-- 最近 7 天新增公开项目：28
+- Starred 项目：153（公开 153，私有 0）
+- 最近 7 天新增公开项目：50
 - 最近 7 天新增私有项目：0（私有仓库名称不写入公开仓库）
 - 最近 7 天有活动的公开项目：40
 - 最近 7 天有活动的私有项目：0（仅统计数量）
 
 ### 最近新增公开 starred
 
-- [paperclipai/paperclip](https://github.com/paperclipai/paperclip)
-- [theBigGavin/marketingdashboard](https://github.com/theBigGavin/marketingdashboard)
-- [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)
-- [simonlin1212/vibe-astock](https://github.com/simonlin1212/vibe-astock)
-- [ccxt/ccxt](https://github.com/ccxt/ccxt)
-- [stefan-jansen/zipline-reloaded](https://github.com/stefan-jansen/zipline-reloaded)
-- [mementum/backtrader](https://github.com/mementum/backtrader)
-- [je-suis-tm/quant-trading](https://github.com/je-suis-tm/quant-trading)
-- [stefan-jansen/machine-learning-for-trading](https://github.com/stefan-jansen/machine-learning-for-trading)
-- [wilsonfreitas/awesome-quant](https://github.com/wilsonfreitas/awesome-quant)
-- [wangzhe3224/awesome-systematic-trading](https://github.com/wangzhe3224/awesome-systematic-trading)
-- [lukeTheNeuromancer/agentic-ai-system-design-primer-zh](https://github.com/lukeTheNeuromancer/agentic-ai-system-design-primer-zh)
-- [ix-infrastructure/Ix](https://github.com/ix-infrastructure/Ix)
-- [pallavi-shekhar/ai-engineering-interview-questions-company-wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise)
-- [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)
-- [liangdabiao/easy_investment_Agent_crewai](https://github.com/liangdabiao/easy_investment_Agent_crewai)
-- [Yinsongxu/LLM2Jev](https://github.com/Yinsongxu/LLM2Jev)
-- [TNT-Likely/PanWatch](https://github.com/TNT-Likely/PanWatch)
-- [CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot)
-- [LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat)
-- [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
-- [typesafe-ai/skills](https://github.com/typesafe-ai/skills)
-- [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)
-- [simonlin1212/TradingAgents-astock](https://github.com/simonlin1212/TradingAgents-astock)
-- [jundizhou/easy-stock](https://github.com/jundizhou/easy-stock)
-- [malevrigns/agent-jev](https://github.com/malevrigns/agent-jev)
-- [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev)
-- [yibie/jev-engineering-zh](https://github.com/yibie/jev-engineering-zh)
+- [vibrantlabsai/ragas](https://github.com/vibrantlabsai/ragas)
+- [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG)
+- [microsoft/graphrag](https://github.com/microsoft/graphrag)
+- [infiniflow/ragflow](https://github.com/infiniflow/ragflow)
+- [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai)
+- [docling-project/docling](https://github.com/docling-project/docling)
+- [Future-House/paper-qa](https://github.com/Future-House/paper-qa)
+- [AkariAsai/OpenScholar](https://github.com/AkariAsai/OpenScholar)
+- [haorantang97/Personal-Ontology](https://github.com/haorantang97/Personal-Ontology)
+- [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners)
+- [chiphuyen/dmls-book](https://github.com/chiphuyen/dmls-book)
+- [aishwaryanr/awesome-generative-ai-guide](https://github.com/aishwaryanr/awesome-generative-ai-guide)
+- [Sumanth077/Hands-On-AI-Engineering](https://github.com/Sumanth077/Hands-On-AI-Engineering)
+- [GokuMohandas/Made-With-ML](https://github.com/GokuMohandas/Made-With-ML)
+- [HandsOnLLM/Hands-On-Large-Language-Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)
+- [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
+- [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners)
+- [NirDiamant/GenAI_Agents](https://github.com/NirDiamant/GenAI_Agents)
+- [AI4Finance-Foundation/FinGPT](https://github.com/AI4Finance-Foundation/FinGPT)
+- [bbfamily/abu](https://github.com/bbfamily/abu)
+- [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html)
+- [Mathieu2301/TradingView-API](https://github.com/Mathieu2301/TradingView-API)
+- [shy3130/tick-stock-panel](https://github.com/shy3130/tick-stock-panel)
+- [resend/resend-skills](https://github.com/resend/resend-skills)
+- [PostHog/skills](https://github.com/PostHog/skills)
+- [getsentry/sentry-agent-skills](https://github.com/getsentry/sentry-agent-skills)
+- [semgrep/skills](https://github.com/semgrep/skills)
+- [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli)
+- [remotion-dev/skills](https://github.com/remotion-dev/skills)
+- [emilkowalski/skills](https://github.com/emilkowalski/skills)
+- [clerk/skills](https://github.com/clerk/skills)
+- [prisma/skills](https://github.com/prisma/skills)
+- [neondatabase/agent-skills](https://github.com/neondatabase/agent-skills)
+- [mcollina/skills](https://github.com/mcollina/skills)
+- [mastra-ai/skills](https://github.com/mastra-ai/skills)
+- [getsentry/skills](https://github.com/getsentry/skills)
+- [google/agents-cli](https://github.com/google/agents-cli)
+- [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)
+- [mootdx/mootdx](https://github.com/mootdx/mootdx)
+- [anhermon/awesome-agent-observability](https://github.com/anhermon/awesome-agent-observability)
+- [benchflow-ai/awesome-evals](https://github.com/benchflow-ai/awesome-evals)
+- [cloudflare/agents](https://github.com/cloudflare/agents)
+- [vivy-yi/awesome-agent-orchestration](https://github.com/vivy-yi/awesome-agent-orchestration)
+- [mnemoverse/awesome-agent-memory](https://github.com/mnemoverse/awesome-agent-memory)
+- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+- [yzfly/awesome-context-engineering](https://github.com/yzfly/awesome-context-engineering)
+- [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)
+- [walkinglabs/awesome-harness-engineering](https://github.com/walkinglabs/awesome-harness-engineering)
+- [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)
+- [owlman/CS_StudyNotes](https://github.com/owlman/CS_StudyNotes)
 
 ### 最近活动公开项目
 
 | 项目 | 最近提交 | 最新 Release | 近 7 天 Issue/PR |
 | --- | --- | --- | --- |
-| [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 2026-09-28 `80e86017` | `v1.3.7` 2026-09-13 | 5 / 39 |
-| [ClickHouse/ClickHouse](https://github.com/ClickHouse/ClickHouse) | 2026-09-28 `ac699e16` | `v26.9.4.3-stable` 2026-09-27 | 31 / 69 |
-| [LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat) | 2026-09-28 `c8c5478c` | 无 | 15 / 85 |
-| [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | 2026-09-28 `2cf62bae` | `v0.20.0` 2026-09-27 | 9 / 16 |
-| [ix-infrastructure/Ix](https://github.com/ix-infrastructure/Ix) | 2026-09-27 `7ef7f89d` | `v0.11.0` 2026-09-26 | 3 / 48 |
-| [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) | 2026-09-27 `95ba6ae7` | 无 | 6 / 49 |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 2026-09-27 `738c8472` | 无 | 19 / 81 |
-| [public-apis/public-apis](https://github.com/public-apis/public-apis) | 2026-09-27 `7598f906` | 无 | 0 / 100 |
-| [mutonby/openshorts](https://github.com/mutonby/openshorts) | 2026-09-27 `89f03093` | 无 | 6 / 2 |
-| [ccxt/ccxt](https://github.com/ccxt/ccxt) | 2026-09-27 `deb97caa` | `v4.5.84` 2026-09-24 | 13 / 87 |
-| [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | 2026-09-27 `2d0285ab` | `career-ops-v1.34.0` 2026-09-24 | 37 / 63 |
-| [Lingtai-AI/lingtai](https://github.com/Lingtai-AI/lingtai) | 2026-09-27 `f3a459ac` | `v1.0.10` 2026-09-27 | 1 / 6 |
-| [TNT-Likely/PanWatch](https://github.com/TNT-Likely/PanWatch) | 2026-09-27 `5ebd90ad` | `0.15.0` 2026-09-25 | 2 / 20 |
-| [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | 2026-09-27 `08a1592e` | `v0.5.6` 2026-09-23 | 37 / 63 |
-| [eternity4719/HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter) | 2026-09-27 `24e3d67e` | `epub-latest` 2026-09-18 | 17 / 1 |
-| [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 2026-09-27 `d3fee51a` | `v3.32.0` 2026-09-06 | 11 / 21 |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 2026-09-27 `fd914595` | `v1.24.0` 2026-09-25 | 36 / 64 |
-| [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 2026-09-27 `0f14d261` | `v2026.916.1` 2026-09-21 | 28 / 72 |
-| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 2026-09-27 `09170eec` | `v2.15.0` 2026-08-13 | 3 / 6 |
-| [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) | 2026-09-27 `2ac9084a` | 无 | 0 / 28 |
-| [moorcheh-ai/memanto](https://github.com/moorcheh-ai/memanto) | 2026-09-27 `2265a013` | `v0.2.23` 2026-09-24 | 3 / 95 |
-| [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | 2026-09-27 `59dc4f04` | 无 | 1 / 7 |
-| [CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot) | 2026-09-27 `ca8d51c3` | `v0.0.15` 2026-09-22 | 5 / 50 |
-| [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) | 2026-09-27 `c3352738` | 无 | 9 / 20 |
-| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | 2026-09-27 `3c301956` | 无 | 0 / 100 |
-| [gaogaotiantian/viztracer](https://github.com/gaogaotiantian/viztracer) | 2026-09-26 `75a662d6` | `1.1.1` 2025-11-10 | 2 / 3 |
-| [jundizhou/easy-stock](https://github.com/jundizhou/easy-stock) | 2026-09-26 `bd47fc3d` | `v1.2.2` 2026-09-22 | 0 / 1 |
-| [ollama/ollama](https://github.com/ollama/ollama) | 2026-09-26 `16b4376a` | `v0.34.4` 2026-09-23 | 32 / 68 |
-| [Yinsongxu/LLM2Jev](https://github.com/Yinsongxu/LLM2Jev) | 2026-09-26 `a4aafa85` | 无 | 1 / 1 |
-| [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 2026-09-26 `e40a45ec` | `v0.16.2` 2026-09-08 | 2 / 3 |
-| [hypit-ai/hypit](https://github.com/hypit-ai/hypit) | 2026-09-26 `557497b3` | `v0.2.16` 2026-09-26 | 11 / 30 |
-| [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | 2026-09-26 `4f570385` | `v2.1.160` 2026-06-02 | 1 / 2 |
-| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 2026-09-26 `dc676965` | 无 | 5 / 18 |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 2026-09-26 `2686b620` | `0.6.11` 2026-09-26 | 11 / 37 |
-| [bojieli/ai-infra-book](https://github.com/bojieli/ai-infra-book) | 2026-09-26 `56ecb425` | `build-20260923-204840` 2026-09-23 | 0 / 11 |
-| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | 2026-09-25 `e87bb897` | `v0.0.82` 2026-09-18 | 9 / 3 |
-| [github/spec-kit](https://github.com/github/spec-kit) | 2026-09-25 `c00dc055` | `v1.0.12` 2026-09-25 | 39 / 61 |
-| [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | 2026-09-25 `e0d4d756` | `v0.4.15` 2026-08-23 | 3 / 9 |
-| [lukeTheNeuromancer/agentic-ai-system-design-primer-zh](https://github.com/lukeTheNeuromancer/agentic-ai-system-design-primer-zh) | 2026-09-25 `43e4937a` | 无 | 0 / 0 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | 2026-09-25 `68253fc2` | `4.0` 2023-01-05 | 5 / 28 |
+| [ccxt/ccxt](https://github.com/ccxt/ccxt) | 2026-10-05 `01fe3887` | `v4.5.85` 2026-10-01 | 7 / 93 |
+| [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | 2026-10-05 `1669d61b` | 无 | 0 / 7 |
+| [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 2026-10-05 `77e41928` | `v3.32.0` 2026-09-06 | 8 / 39 |
+| [eternity4719/HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter) | 2026-10-05 `a4e920f4` | `epub-latest` 2026-09-18 | 33 / 10 |
+| [docling-project/docling](https://github.com/docling-project/docling) | 2026-10-05 `b91e6b22` | `v2.133.0` 2026-10-03 | 40 / 60 |
+| [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) | 2026-10-05 `d745fbf3` | 无 | 6 / 34 |
+| [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | 2026-10-05 `28801c89` | `v0.5.6` 2026-09-23 | 44 / 56 |
+| [ClickHouse/ClickHouse](https://github.com/ClickHouse/ClickHouse) | 2026-10-05 `468fbe0b` | `v26.8.17.4-lts` 2026-10-04 | 33 / 67 |
+| [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | 2026-10-05 `8afd0a68` | `v0.9.4` 2026-09-23 | 7 / 25 |
+| [public-apis/public-apis](https://github.com/public-apis/public-apis) | 2026-10-05 `e802420e` | 无 | 2 / 98 |
+| [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 2026-10-05 `1ca0988a` | `v0.4.8` 2026-10-05 | 20 / 37 |
+| [TNT-Likely/PanWatch](https://github.com/TNT-Likely/PanWatch) | 2026-10-05 `162ff521` | `0.17.4` 2026-10-04 | 0 / 41 |
+| [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering) | 2026-10-05 `9588274f` | `v1.6.0` 2026-07-20 | 2 / 20 |
+| [jundizhou/easy-stock](https://github.com/jundizhou/easy-stock) | 2026-10-05 `424b8f61` | `v1.4.0` 2026-10-04 | 1 / 0 |
+| [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | 2026-10-05 `936c8a6d` | 无 | 5 / 54 |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 2026-10-04 `8bb22934` | `v1.24.0` 2026-09-25 | 73 / 27 |
+| [ix-infrastructure/Ix](https://github.com/ix-infrastructure/Ix) | 2026-10-04 `677e0f44` | `v0.12.0` 2026-10-01 | 1 / 70 |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 2026-10-04 `43a9db76` | 无 | 21 / 79 |
+| [mutonby/openshorts](https://github.com/mutonby/openshorts) | 2026-10-04 `f4c44876` | 无 | 3 / 5 |
+| [EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books) | 2026-10-04 `2b098c9d` | 无 | 1 / 33 |
+| [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) | 2026-10-04 `e461eab2` | 无 | 0 / 41 |
+| [cloudflare/agents](https://github.com/cloudflare/agents) | 2026-10-04 `26798f1b` | `agents@0.26.0` 2026-10-02 | 22 / 78 |
+| [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | 2026-10-04 `8f2c13dd` | `v6.12.1` 2026-10-04 | 39 / 41 |
+| [shy3130/tick-stock-panel](https://github.com/shy3130/tick-stock-panel) | 2026-10-04 `2b35e0d4` | 无 | 12 / 12 |
+| [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) | 2026-10-04 `39854d85` | 无 | 21 / 4 |
+| [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | 2026-10-04 `b866e4b4` | `career-ops-v1.35.0` 2026-10-01 | 22 / 78 |
+| [PostHog/skills](https://github.com/PostHog/skills) | 2026-10-04 `039a186c` | 无 | 0 / 8 |
+| [hypit-ai/hypit](https://github.com/hypit-ai/hypit) | 2026-10-04 `7f730abf` | `v0.2.17` 2026-10-01 | 8 / 11 |
+| [stefan-jansen/machine-learning-for-trading](https://github.com/stefan-jansen/machine-learning-for-trading) | 2026-10-04 `07a170d9` | `v3.1.0-artifacts` 2026-09-20 | 1 / 9 |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 2026-10-04 `24fe0ef7` | `v1.3.1` 2026-10-04 | 44 / 5 |
+| [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 2026-10-04 `1c07b590` | `v2026.1001.0` 2026-10-02 | 23 / 77 |
+| [anhermon/awesome-agent-observability](https://github.com/anhermon/awesome-agent-observability) | 2026-10-04 `17b7f52f` | 无 | 1 / 13 |
+| [owlman/CS_StudyNotes](https://github.com/owlman/CS_StudyNotes) | 2026-10-04 `c32462a2` | 无 | 0 / 0 |
+| [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 2026-10-04 `68eb5a68` | `v1.3.8` 2026-10-03 | 1 / 99 |
+| [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 2026-10-04 `65719433` | `v3.1.0` 2026-10-04 | 40 / 60 |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | 2026-10-04 `5abed86c` | `2026.8.31` 2026-08-31 | 33 / 67 |
+| [Lingtai-AI/lingtai](https://github.com/Lingtai-AI/lingtai) | 2026-10-04 `ac685a8b` | `v1.0.11` 2026-10-03 | 3 / 22 |
+| [du2333/flare-stack-blog](https://github.com/du2333/flare-stack-blog) | 2026-10-04 `fe31d15d` | `v3.0.0` 2026-10-03 | 0 / 21 |
+| [wangzhe3224/awesome-systematic-trading](https://github.com/wangzhe3224/awesome-systematic-trading) | 2026-10-03 `67726b43` | `v1.0.0` 2022-12-11 | 0 / 10 |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 2026-10-03 `1394a3f7` | `v0.6.0` 2026-10-03 | 19 / 50 |
 
 ### Sources checked
 
