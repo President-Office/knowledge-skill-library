@@ -84,87 +84,63 @@ GitHub API 返回本周新增（按 `starred_at` 倒序）：
 
 > 本区块由 GitHub Actions 维护；上方分类、判断和手工笔记不会被自动覆盖。
 
-- Starred 项目：181（公开 181，私有 0）
-- 最近 7 天新增公开项目：28
+- Starred 项目：185（公开 185，私有 0）
+- 最近 7 天新增公开项目：4
 - 最近 7 天新增私有项目：0（私有仓库名称不写入公开仓库）
 - 最近 7 天有活动的公开项目：40
 - 最近 7 天有活动的私有项目：0（仅统计数量）
 
 ### 最近新增公开 starred
 
-- [SourceWeft/SourceWeft](https://github.com/SourceWeft/SourceWeft)
-- [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
-- [cloudflare/agentic-inbox](https://github.com/cloudflare/agentic-inbox)
-- [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads)
-- [Open-LLM-VTuber/Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber)
-- [Anil-matcha/Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI)
-- [Fincept-Corporation/FinceptTerminal](https://github.com/Fincept-Corporation/FinceptTerminal)
-- [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading)
-- [The-Swarm-Corporation/AutoHedge](https://github.com/The-Swarm-Corporation/AutoHedge)
-- [GordenSun/GordenPPTSkill](https://github.com/GordenSun/GordenPPTSkill)
-- [rtk-ai/rtk](https://github.com/rtk-ai/rtk)
-- [ruvnet/ruflo](https://github.com/ruvnet/ruflo)
-- [alchaincyf/huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion)
-- [obra/superpowers](https://github.com/obra/superpowers)
-- [alswl/guides](https://github.com/alswl/guides)
-- [alswl/skm](https://github.com/alswl/skm)
-- [alswl/mind-forge](https://github.com/alswl/mind-forge)
-- [zilliztech/deep-searcher](https://github.com/zilliztech/deep-searcher)
-- [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
-- [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch)
-- [k2-fsa/OmniVoice](https://github.com/k2-fsa/OmniVoice)
-- [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs)
-- [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills)
-- [dongzhuoyao/academic-figure-generator](https://github.com/dongzhuoyao/academic-figure-generator)
-- [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
-- [HKUSTDial/Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills)
-- [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-- [HytidelLegend/ai-aug-edu](https://github.com/HytidelLegend/ai-aug-edu)
+- [wuyoscar/AISafetyHot-Hub](https://github.com/wuyoscar/AISafetyHot-Hub)
+- [lit26/finvizfinance](https://github.com/lit26/finvizfinance)
+- [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp)
+- [QwenAudio/CosyVoice](https://github.com/QwenAudio/CosyVoice)
 
 ### 最近活动公开项目
 
 | 项目 | 最近提交 | 最新 Release | 近 7 天 Issue/PR |
 | --- | --- | --- | --- |
-| [ccxt/ccxt](https://github.com/ccxt/ccxt) | 2026-10-12 `cf950ca4` | `v4.5.85` 2026-10-01 | 15 / 66 |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 2026-10-12 `8311f78d` | `v0.2.22` 2026-10-08 | 4 / 9 |
-| [docling-project/docling](https://github.com/docling-project/docling) | 2026-10-12 `070a6d39` | `v2.138.0` 2026-10-12 | 39 / 61 |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 2026-10-12 `9620ccab` | `v1.0.0-rc1` 2026-09-29 | 10 / 90 |
-| [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | 2026-10-12 `63281e52` | 无 | 1 / 55 |
-| [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 2026-10-12 `5d5b86dd` | `v0.5.1` 2026-10-12 | 35 / 65 |
-| [nexu-io/open-design](https://github.com/nexu-io/open-design) | 2026-10-12 `e0946f94` | `open-design-v0.24.1` 2026-09-24 | 29 / 71 |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 2026-10-12 `a5ad4e48` | 无 | 13 / 87 |
-| [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 2026-10-12 `1b4c8038` | `v2026.1005.0` 2026-10-06 | 27 / 73 |
-| [ClickHouse/ClickHouse](https://github.com/ClickHouse/ClickHouse) | 2026-10-12 `371b23a4` | `v26.9.16.11-stable` 2026-10-11 | 31 / 69 |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 2026-10-12 `0f1b6f62` | `v1.26.0` 2026-10-08 | 24 / 76 |
-| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 2026-10-12 `026b6e17` | `v2.15.0` 2026-08-13 | 4 / 14 |
-| [ollama/ollama](https://github.com/ollama/ollama) | 2026-10-12 `c1c53629` | `v0.40.3` 2026-10-11 | 29 / 71 |
-| [Lingtai-AI/lingtai](https://github.com/Lingtai-AI/lingtai) | 2026-10-12 `d17bfc15` | `v1.0.12` 2026-10-12 | 3 / 12 |
-| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | 2026-10-12 `2905162d` | `v0.8.149` 2026-10-11 | 21 / 79 |
-| [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 2026-10-12 `bd6939b6` | `v1.3.8` 2026-10-03 | 7 / 76 |
-| [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering) | 2026-10-12 `0b41ef47` | `v1.6.0` 2026-07-20 | 1 / 30 |
-| [eternity4719/HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter) | 2026-10-12 `48754739` | `epub-latest` 2026-09-18 | 30 / 10 |
-| [pallavi-shekhar/ai-engineering-interview-questions-company-wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) | 2026-10-12 `42e4e135` | 无 | 0 / 0 |
-| [jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot) | 2026-10-12 `6b287c49` | `v3.9.5` 2026-08-27 | 21 / 9 |
-| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | 2026-10-12 `4c9a2759` | 无 | 4 / 19 |
-| [TNT-Likely/PanWatch](https://github.com/TNT-Likely/PanWatch) | 2026-10-12 `f1d76d17` | `0.18.1` 2026-10-12 | 7 / 18 |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | 2026-10-12 `4d0afc1b` | `v1.5.7` 2026-09-02 | 13 / 27 |
-| [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | 2026-10-12 `7703ca66` | `v0.5.6` 2026-09-23 | 35 / 65 |
-| [CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot) | 2026-10-12 `7b1c20a6` | `v0.1.2` 2026-10-07 | 7 / 38 |
-| [SourceWeft/SourceWeft](https://github.com/SourceWeft/SourceWeft) | 2026-10-12 `5586920f` | `v0.3.0-rc.8` 2026-10-11 | 29 / 40 |
-| [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) | 2026-10-11 `106f9874` | 无 | 10 / 43 |
-| [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | 2026-10-11 `7afe0e16` | 无 | 1 / 18 |
-| [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | 2026-10-11 `f4840b7d` | `career-ops-v1.36.0` 2026-10-10 | 24 / 76 |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 2026-10-11 `aac16fbd` | `v3.56.7` 2026-10-11 | 13 / 87 |
-| [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | 2026-10-11 `9f198716` | `v6.12.2` 2026-10-11 | 64 / 34 |
-| [public-apis/public-apis](https://github.com/public-apis/public-apis) | 2026-10-11 `3a416d89` | 无 | 1 / 99 |
-| [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) | 2026-10-11 `d3c76819` | `v0.1.16` 2026-09-29 | 26 / 74 |
-| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 2026-10-11 `27a659f5` | `v0.51.0` 2026-10-02 | 33 / 67 |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 2026-10-11 `d1e51716` | `v3.23.0` 2026-10-03 | 10 / 6 |
-| [Yinsongxu/LLM2Jev](https://github.com/Yinsongxu/LLM2Jev) | 2026-10-11 `f2bdad64` | `v0.1.0` 2026-10-11 | 0 / 3 |
-| [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) | 2026-10-11 `7535907a` | 无 | 0 / 27 |
-| [stefan-jansen/machine-learning-for-trading](https://github.com/stefan-jansen/machine-learning-for-trading) | 2026-10-11 `988cf971` | `v3.1.0-artifacts` 2026-09-20 | 5 / 13 |
-| [emilkowalski/skills](https://github.com/emilkowalski/skills) | 2026-10-11 `2d228630` | 无 | 4 / 0 |
-| [simonlin1212/TradingAgents-astock](https://github.com/simonlin1212/TradingAgents-astock) | 2026-10-11 `e3981af1` | `v0.5.21` 2026-10-11 | 1 / 6 |
+| [ccxt/ccxt](https://github.com/ccxt/ccxt) | 2026-10-19 `3af8cf88` | `v4.5.88` 2026-10-14 | 16 / 84 |
+| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | 2026-10-19 `50a71b68` | `v0.4.3` 2026-10-18 | 11 / 36 |
+| [wuyoscar/AISafetyHot-Hub](https://github.com/wuyoscar/AISafetyHot-Hub) | 2026-10-19 `8f327f87` | 无 | 0 / 2 |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 2026-10-19 `cee78e00` | 无 | 32 / 68 |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 2026-10-19 `724f0367` | `v1.0.0-rc2` 2026-10-16 | 8 / 92 |
+| [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 2026-10-19 `2f6ad222` | `v2026.1012.0` 2026-10-12 | 49 / 51 |
+| [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | 2026-10-19 `cea3d339` | 无 | 2 / 50 |
+| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | 2026-10-19 `cea0bad7` | `v0.8.174` 2026-10-19 | 4 / 96 |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 2026-10-19 `53ca2f6d` | `v1.27.1` 2026-10-12 | 45 / 55 |
+| [jundizhou/easy-stock](https://github.com/jundizhou/easy-stock) | 2026-10-19 `1a04d80f` | `v1.5.5` 2026-10-19 | 4 / 3 |
+| [hypit-ai/hypit](https://github.com/hypit-ai/hypit) | 2026-10-19 `0d36de9a` | `v0.3.1` 2026-10-09 | 5 / 34 |
+| [pallavi-shekhar/ai-engineering-interview-questions-company-wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) | 2026-10-19 `7b86ebe5` | 无 | 0 / 0 |
+| [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | 2026-10-19 `233ed099` | 无 | 2 / 12 |
+| [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering) | 2026-10-19 `86ca6e27` | `v1.6.0` 2026-07-20 | 1 / 18 |
+| [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) | 2026-10-19 `119d8cf5` | 无 | 8 / 1 |
+| [shy3130/tick-stock-panel](https://github.com/shy3130/tick-stock-panel) | 2026-10-19 `19486fc0` | `v0.3.8` 2026-10-16 | 10 / 24 |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 2026-10-19 `9a501c8d` | `v1.0.1` 2026-10-14 | 50 / 50 |
+| [stefan-jansen/machine-learning-for-trading](https://github.com/stefan-jansen/machine-learning-for-trading) | 2026-10-19 `96f0672b` | `v3.1.0-artifacts` 2026-09-20 | 2 / 8 |
+| [malevrigns/agent-jev](https://github.com/malevrigns/agent-jev) | 2026-10-18 `08d9e7e2` | `v1.0.0` 2026-10-01 | 1 / 7 |
+| [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | 2026-10-18 `cd9ce140` | `career-ops-v1.37.0` 2026-10-16 | 20 / 80 |
+| [ClickHouse/ClickHouse](https://github.com/ClickHouse/ClickHouse) | 2026-10-18 `110043e5` | `v26.7.34.3-stable` 2026-10-18 | 31 / 69 |
+| [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) | 2026-10-18 `c659f8ee` | `1.0.12` 2026-10-18 | 4 / 36 |
+| [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | 2026-10-18 `61e01f82` | `v6.12.4` 2026-10-14 | 12 / 32 |
+| [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | 2026-10-18 `fd531313` | `v0.5` 2026-10-17 | 10 / 33 |
+| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 2026-10-18 `874bc13a` | 无 | 4 / 32 |
+| [wangzhe3224/awesome-systematic-trading](https://github.com/wangzhe3224/awesome-systematic-trading) | 2026-10-18 `1cab7c23` | `v1.0.0` 2022-12-11 | 0 / 7 |
+| [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) | 2026-10-18 `0d4b1ca0` | `v2026.10.3` 2026-10-15 | 8 / 35 |
+| [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) | 2026-10-18 `e2f3fa60` | 无 | 0 / 33 |
+| [PostHog/skills](https://github.com/PostHog/skills) | 2026-10-18 `ae0f5518` | 无 | 1 / 11 |
+| [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | 2026-10-18 `e57e70e2` | 无 | 1 / 17 |
+| [owlman/CS_StudyNotes](https://github.com/owlman/CS_StudyNotes) | 2026-10-18 `b36f26b4` | 无 | 0 / 0 |
+| [mcollina/skills](https://github.com/mcollina/skills) | 2026-10-18 `c75d70db` | 无 | 0 / 0 |
+| [alswl/skm](https://github.com/alswl/skm) | 2026-10-18 `b2dc8380` | `v0.7.1` 2026-10-18 | 1 / 0 |
+| [anhermon/awesome-agent-observability](https://github.com/anhermon/awesome-agent-observability) | 2026-10-18 `8f1bc2df` | 无 | 1 / 9 |
+| [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) | 2026-10-18 `c546e877` | `v0.1.16` 2026-09-29 | 12 / 88 |
+| [QingYunA/answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 2026-10-18 `7acea240` | `v0.5.5` 2026-10-16 | 32 / 68 |
+| [simonlin1212/vibe-astock](https://github.com/simonlin1212/vibe-astock) | 2026-10-18 `7988c991` | `v2.1.2` 2026-10-18 | 1 / 2 |
+| [TNT-Likely/PanWatch](https://github.com/TNT-Likely/PanWatch) | 2026-10-18 `59a6aad5` | `0.18.1` 2026-10-12 | 40 / 34 |
+| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | 2026-10-18 `f00a852f` | 无 | 0 / 100 |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 2026-10-18 `cfd081d8` | `v3.23.1` 2026-10-16 | 10 / 14 |
 
 ### Sources checked
 
