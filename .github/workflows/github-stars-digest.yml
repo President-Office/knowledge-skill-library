@@ -32,7 +32,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Refresh the stars snapshot
+      - name: Test the report generator
+        run: python -m unittest discover -s .github/scripts -p 'test_*.py' -v
+
+      - name: Regenerate the complete stars report
         run: python .github/scripts/github_stars_digest.py
 
       - name: Validate the change

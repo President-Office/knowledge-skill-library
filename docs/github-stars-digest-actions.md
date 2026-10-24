@@ -24,21 +24,19 @@ The workflow uses two different credentials:
 Never write either token into the repository, digest, logs, or generated
 artifacts.
 
-## Public-report boundary
+## Generated report and privacy
 
 This repository is public. The action may read private starred repositories,
-but it writes only aggregate private-project counts. Private repository names,
-URLs, descriptions, releases, commits, Issues, and PRs are intentionally
-omitted from `00-inbox/github-stars-digest.md`.
+but it regenerates the entire `00-inbox/github-stars-digest.md` from the
+current API response on each run. Private repository names, URLs,
+descriptions, releases, commits, Issues, and PRs are omitted; only private
+project counts are included.
 
-## Update boundary
+Public repositories are automatically grouped using their names, descriptions,
+and GitHub topics. These rule-based groups are for navigation, not editorial
+recommendations. The generated report includes the complete public starred
+repository list so its counts and contents come from the same scan.
 
-The action replaces only the section between:
-
-```text
-<!-- BEGIN GITHUB_STARS_ACTIONS -->
-<!-- END GITHUB_STARS_ACTIONS -->
-```
-
-The curated report above that section remains human-owned. If the generated
-snapshot has no material change, the workflow does not create a commit.
+The previous hand-curated report is replaced on the first run of this
+generator version. The workflow runs focused generator tests before scanning.
+If the generated report has no material change, it does not create a commit.

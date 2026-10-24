@@ -1,10 +1,4 @@
-"""Refresh the public-safe GitHub starred-project digest.
-
-The workflow reads the user's starred repositories with a personal token, but
-never writes private repository names or details into this public repository.
-Only the marked automation section is replaced; the curated report remains
-human-owned.
-"""
+"""Generate a complete, public-safe report from the user's GitHub stars."""
 
 from __future__ import annotations
 
@@ -24,10 +18,46 @@ from zoneinfo import ZoneInfo
 
 API_VERSION = "2022-11-28"
 PAGE_SIZE = 100
-START_MARKER = "<!-- BEGIN GITHUB_STARS_ACTIONS -->"
-END_MARKER = "<!-- END GITHUB_STARS_ACTIONS -->"
 BEIJING = ZoneInfo("Asia/Shanghai")
 UTC = timezone.utc
+CATEGORY_RULES = (
+    (
+        "AI 与 Agent",
+        (
+            "artificial intelligence",
+            "machine learning",
+            "deep learning",
+            "generative ai",
+            "llm",
+            "agent",
+            "gpt",
+            "mcp",
+            "rag",
+            "embedding",
+            "transformer",
+            "neural network",
+            "claude",
+            "skill",
+        ),
+    ),
+    (
+        "金融与量化",
+        ("finance", "financial", "trading", "quant", "stock", "investment", "crypto"),
+    ),
+    (
+        "数据与研究",
+        ("data", "database", "analytics", "research", "search", "crawler", "knowledge"),
+    ),
+    (
+        "开发工具与基础设施",
+        ("developer", "development", "framework", "library", "cli", "api", "vscode", "git"),
+    ),
+    (
+        "学习与资料",
+        ("awesome", "book", "course", "tutorial", "guide", "learning", "study", "interview"),
+    ),
+)
+CATEGORY_NAMES = tuple(name for name, _ in CATEGORY_RULES) + ("其他",)
 
 
 class GitHubApiError(RuntimeError):
@@ -40,12 +70,6 @@ def env_required(name: str) -> str:
         raise GitHubApiError(f"Required environment variable is missing: {name}")
     return value
 
-
-TOKEN = os.environ.get("GH_TOKEN", "").strip()
-if not TOKEN:
-    raise GitHubApiError(
-        "STARS_GITHUB_TOKEN is not configured; set it as the GH_TOKEN workflow secret."
-    )
 
 PRIVATE_NAMES: set[str] = set()
 
@@ -76,15 +100,27 @@ def api_json(
         f"X-GitHub-Api-Version: {API_VERSION}",
     ]
     for attempt in range(3):
-        result = subprocess.run(
-            command,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            timeout=60,
-            check=False,
-        )
+        try:
+            result = subprocess.run(
+                command,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                timeout=60,
+                check=False,
+            )
+        except subprocess.TimeoutExpired as error:
+            if attempt < 2:
+                time.sleep(2**attempt)
+                continue
+            raise GitHubApiError(
+                f"GitHub API timed out at {redacted_path(path)} after retries."
+            ) from error
+        except OSError as error:
+            raise GitHubApiError(
+                f"Could not run GitHub CLI at {redacted_path(path)}: {error}"
+            ) from error
         if result.returncode == 0:
             try:
                 return json.loads(result.stdout)
@@ -96,7 +132,18 @@ def api_json(
         error_text = result.stderr.strip()
         if allow_not_found and "HTTP 404" in error_text:
             return None
-        if any(f"HTTP {code}" in error_text for code in (429, 500, 502, 503, 504)):
+        retryable = any(
+            f"HTTP {code}" in error_text for code in (429, 500, 502, 503, 504)
+        ) or any(
+            message in error_text.lower()
+            for message in (
+                "unexpected eof",
+                "connection reset",
+                "tls handshake timeout",
+                "timeout awaiting response headers",
+            )
+        )
+        if retryable:
             if attempt < 2:
                 time.sleep(2**attempt)
                 continue
@@ -243,6 +290,12 @@ def inspect_repository(item: dict[str, Any], window_start: datetime) -> dict[str
 
 
 def collect_snapshot(now: datetime) -> dict[str, Any]:
+    user = api_json("user")
+    account = user.get("login") if isinstance(user, dict) else None
+    if account != "PeterKZhao":
+        raise GitHubApiError(
+            f"Expected starred account PeterKZhao, received {account or 'unknown'}."
+        )
     starred = load_starred()
     window_start = now.astimezone(UTC) - timedelta(days=7)
     public: list[dict[str, Any]] = []
@@ -272,6 +325,8 @@ def collect_snapshot(now: datetime) -> dict[str, Any]:
                 "description": str(repo.get("description") or "").replace("\n", " ")[:160],
                 "language": repo.get("language") or "n/a",
                 "stars": int(repo.get("stargazers_count") or 0),
+                "topics": repo.get("topics") or [],
+                "archived": bool(repo.get("archived")),
                 "starred_at": details["starred_at"],
                 "recent_star": details["recent_star"],
                 "recent_activity": details["recent_activity"],
@@ -300,6 +355,7 @@ def collect_snapshot(now: datetime) -> dict[str, Any]:
     )
 
     return {
+        "account": account,
         "checked_at": now.astimezone(BEIJING).strftime("%Y-%m-%d %H:%M:%S %Z"),
         "window_start": window_start.astimezone(BEIJING).strftime("%Y-%m-%d"),
         "total": len(starred),
@@ -307,35 +363,88 @@ def collect_snapshot(now: datetime) -> dict[str, Any]:
         "private_total": len(starred) - len(public),
         "private_new": private_new,
         "private_active": private_active,
-        "new_public": new_public[:50],
+        "new_public": new_public,
+        "active_public_total": len(active_public),
         "active_public": active_public[:40],
+        "public": public,
     }
 
 
-def render_snapshot(snapshot: dict[str, Any]) -> str:
+def classify_repository(repo: dict[str, Any]) -> str:
+    searchable = " ".join(
+        [
+            str(repo.get("name", "")),
+            str(repo.get("description", "")),
+            " ".join(str(topic) for topic in repo.get("topics", [])),
+        ]
+    ).lower()
+    for category, keywords in CATEGORY_RULES:
+        if any(keyword in searchable for keyword in keywords):
+            return category
+    return "其他"
+
+
+def markdown_cell(value: Any) -> str:
+    return str(value or "").replace("|", "\\|").replace("\r", " ").replace("\n", " ").strip()
+
+
+def render_report(snapshot: dict[str, Any]) -> str:
+    public = snapshot["public"]
+    category_groups = {
+        category: [repo for repo in public if classify_repository(repo) == category]
+        for category in CATEGORY_NAMES
+    }
+    languages: dict[str, int] = {}
+    for repo in public:
+        language = str(repo.get("language") or "n/a")
+        languages[language] = languages.get(language, 0) + 1
+
     lines = [
-        START_MARKER,
-        "## GitHub Actions 自动检查快照",
+        "# GitHub Stars Digest",
         "",
-        "> 本区块由 GitHub Actions 维护；上方分类、判断和手工笔记不会被自动覆盖。",
+        f"> 账号：[`{snapshot['account']}`](https://github.com/{snapshot['account']}?tab=stars)",
+        f"> 更新时间：{snapshot['checked_at']}",
+        f"> 统计窗口：最近 7 天（自 {snapshot['window_start']} 起；时间以 GitHub API 返回值为准）。",
         "",
-        f"- Starred 项目：{snapshot['total']}（公开 {snapshot['public_total']}，私有 {snapshot['private_total']}）",
-        f"- 最近 7 天新增公开项目：{len(snapshot['new_public'])}",
-        f"- 最近 7 天新增私有项目：{snapshot['private_new']}（私有仓库名称不写入公开仓库）",
-        f"- 最近 7 天有活动的公开项目：{len(snapshot['active_public'])}",
-        f"- 最近 7 天有活动的私有项目：{snapshot['private_active']}（仅统计数量）",
+        "## 总览",
         "",
-        "### 最近新增公开 starred",
+        f"- Star 总数：{snapshot['total']}（公开 {snapshot['public_total']}，私有 {snapshot['private_total']}）。",
+        f"- 最近 7 天新增：公开 {len(snapshot['new_public'])} 个，私有 {snapshot['private_new']} 个（私有名称不公开）。",
+        f"- 最近 7 天有活动：公开 {snapshot['active_public_total']} 个，私有 {snapshot['private_active']} 个（私有项目仅统计数量）。",
+        "",
+        "### 自动分类",
         "",
     ]
+    for category, repos in category_groups.items():
+        lines.append(f"- {category}：{len(repos)}")
+    lines.extend(["", "### 主要语言", ""])
+    if languages:
+        for language, count in sorted(
+            languages.items(), key=lambda item: (-item[1], item[0].lower())
+        )[:10]:
+            lines.append(f"- {language}：{count}")
+    else:
+        lines.append("- 无公开项目")
+
+    lines.extend(["", "## 最近新增的公开 Star", ""])
     if snapshot["new_public"]:
         for repo in snapshot["new_public"]:
-            lines.append(f"- [{repo['name']}]({repo['url']})")
+            starred_at = parse_timestamp(repo.get("starred_at"))
+            date = (
+                starred_at.astimezone(BEIJING).strftime("%Y-%m-%d")
+                if starred_at
+                else "日期未知"
+            )
+            lines.append(f"- {date} [{repo['name']}]({repo['url']})")
     else:
         lines.append("- 无")
 
-    lines.extend(["", "### 最近活动公开项目", ""])
+    lines.extend(["", "## 最近活动的公开项目", ""])
     if snapshot["active_public"]:
+        lines.append(
+            f"> 展示最近活动的前 {len(snapshot['active_public'])} 个；符合近 7 天活动条件的共 {snapshot['active_public_total']} 个。"
+        )
+        lines.append("")
         lines.extend(
             [
                 "| 项目 | 最近提交 | 最新 Release | 近 7 天 Issue/PR |",
@@ -364,21 +473,48 @@ def render_snapshot(snapshot: dict[str, Any]) -> str:
     else:
         lines.append("- 无")
 
+    lines.extend(["", "## 全部公开 Star 仓库", ""])
+    lines.append(
+        "> 按仓库名称、描述和 GitHub topics 进行规则分类，仅作浏览导航；未匹配到规则的项目归入“其他”。"
+    )
+    for category, repos in category_groups.items():
+        lines.extend(["", f"### {category}（{len(repos)}）", ""])
+        if not repos:
+            lines.append("- 无")
+            continue
+        lines.extend(
+            [
+                "| 仓库 | 描述 | 语言 | Stars | Star 日期 | Topics | 状态 |",
+                "| --- | --- | --- | ---: | --- | --- | --- |",
+            ]
+        )
+        for repo in repos:
+            starred_at = parse_timestamp(repo.get("starred_at"))
+            date = (
+                starred_at.astimezone(BEIJING).strftime("%Y-%m-%d")
+                if starred_at
+                else "未知"
+            )
+            topics = ", ".join(str(topic) for topic in repo.get("topics", [])) or "—"
+            status = "Archived" if repo.get("archived") else "Active"
+            lines.append(
+                f"| [{repo['name']}]({repo['url']}) | "
+                f"{markdown_cell(repo.get('description')) or '—'} | "
+                f"{markdown_cell(repo.get('language')) or 'n/a'} | "
+                f"{repo.get('stars', 0)} | {date} | "
+                f"{markdown_cell(topics)} | {status} |"
+            )
+
     lines.extend(
         [
             "",
-            "### Sources checked",
+            "## 数据来源与口径",
             "",
-            "- GitHub REST API `user/starred`（含私有项目；私有名称和详情不写入此公开报告）。",
-            "- 公开 starred 项目的仓库元数据、最近提交、最新 Release 和近 7 天 Issue/PR。",
-            "- 私有项目只保留数量统计，避免把私有信息发布到公开仓库。",
-            "",
-            "### Validation",
-            "",
-            "- GitHub Actions workflow 执行 `git diff --check`。",
-            "- 只有快照发生实质变化时才提交，避免无变化噪声提交。",
-            "- 推送后通过 GitHub Contents API 回读远端文件 SHA。",
-            END_MARKER,
+            "- Star 列表及 Star 时间：GitHub REST API `user/starred`。",
+            "- 仓库描述、语言、topics、Stars 数和归档状态：GitHub 仓库元数据。",
+            "- 活动信号：最近 7 天内的 Star、仓库更新/推送、提交、Release、Issue 或 PR；仅对候选活跃仓库查询详细记录。",
+            "- 私有仓库名称、链接和详细元数据不会写入此公开报告；只输出私有项目总数及近 7 天统计。",
+            "- 本报告每次运行均整体重新生成；分类为基于公开仓库元数据的规则分类，不代表人工评价或优先级。",
         ]
     )
     return "\n".join(lines) + "\n"
@@ -388,7 +524,7 @@ def normalize_generated_block(block: str) -> str:
     lines = block.replace("\r\n", "\n").splitlines()
     return "\n".join(
         re.sub(
-            r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [A-Z]{2,5}$",
+            r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [A-Z]{2,5}",
             "<normalized>",
             line,
         )
@@ -396,20 +532,10 @@ def normalize_generated_block(block: str) -> str:
     )
 
 
-def replace_generated_section(content: str, generated: str) -> tuple[str, bool]:
-    start = content.find(START_MARKER)
-    end = content.find(END_MARKER)
-    if start >= 0 and end >= start:
-        end += len(END_MARKER)
-        old_block = content[start:end]
-        if normalize_generated_block(old_block) == normalize_generated_block(
-            generated.rstrip("\n")
-        ):
-            return content, False
-        return content[:start] + generated.rstrip("\n") + content[end:], True
-
-    separator = "" if not content or content.endswith("\n\n") else "\n"
-    return content.rstrip("\n") + separator + "\n" + generated, True
+def replace_report(content: str, generated: str) -> tuple[str, bool]:
+    if normalize_generated_block(content) == normalize_generated_block(generated):
+        return content, False
+    return generated, True
 
 
 def write_summary(snapshot: dict[str, Any], changed: bool) -> None:
@@ -423,7 +549,7 @@ def write_summary(snapshot: dict[str, Any], changed: bool) -> None:
             f"- Status: {'updated' if changed else 'no change'}",
             f"- Starred checked: {snapshot['total']} "
             f"(public {snapshot['public_total']}, private {snapshot['private_total']})",
-            f"- Public activity rows: {len(snapshot['active_public'])}",
+            f"- Public activity rows: {snapshot['active_public_total']}",
             f"- Private details: omitted from public report",
         ]
     )
@@ -431,6 +557,10 @@ def write_summary(snapshot: dict[str, Any], changed: bool) -> None:
 
 
 def main() -> int:
+    if not os.environ.get("GH_TOKEN", "").strip():
+        raise GitHubApiError(
+            "STARS_GITHUB_TOKEN is not configured; set it as the GH_TOKEN workflow secret."
+        )
     repository = env_required("DIGEST_REPOSITORY")
     if repository != "President-Office/knowledge-skill-library":
         raise GitHubApiError(
@@ -442,9 +572,9 @@ def main() -> int:
 
     now = datetime.now(UTC)
     snapshot = collect_snapshot(now)
-    generated = render_snapshot(snapshot)
+    generated = render_report(snapshot)
     current = digest_path.read_text(encoding="utf-8")
-    updated, changed = replace_generated_section(current, generated)
+    updated, changed = replace_report(current, generated)
     if changed:
         digest_path.write_text(updated, encoding="utf-8")
         print("GitHub Stars Digest: snapshot changed.")
