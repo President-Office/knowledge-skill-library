@@ -2,7 +2,7 @@
 type: foundation-index
 status: draft
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-11-01
 ---
 
 # Foundations
@@ -100,7 +100,6 @@ updated: 2026-07-02
 | `data/` | 数据库基础、SQL、ORM、schema、表、列、行、键、约束、索引、事务、OLTP/OLAP |
 | `data/databases/` | MySQL、PostgreSQL、Redis、ClickHouse 等具体数据库 |
 | `technology-stacks/` | Java、Spring、Go、Vue、TypeScript、Directus/Payload/Frappe 相关技术栈 |
-| `engineering/` | Monorepo、数学建模等工程组织和建模概念 |
 | `product-patterns/` | CMS、ERP、MES、CRM、Headless CMS 等产品/平台范式 |
 
 ## 写作原则
