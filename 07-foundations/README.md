@@ -16,6 +16,9 @@ updated: 2026-07-02
 | 层次 | 关注问题 | 笔记 |
 | --- | --- | --- |
 | 工程思想 | 如何判断代码和模块是否容易变化、扩展、测试 | [[solid]]、[[dry]]、[[kiss]]、[[yagni]] |
+| 计算机基础 | 软件系统依赖哪些计算、程序、操作系统、网络、数据与安全基础 | [[07-foundations/computer-science/README]] |
+| 软件工程 | 如何把需求转化为可验证、可交付、可运行和可维护的软件 | [[07-foundations/engineering/software-engineering]] |
+| 敏捷与迭代 | 如何通过小批量交付、反馈和调整持续验证价值 | [[07-foundations/agile/README]] |
 | 单一职责 | 一个模块应该只有一个主要变化原因 | [[single-responsibility-principle]] |
 | 模块边界设计 | 什么时候放在一个模块里，什么时候拆成模块、服务或仓库 | [[module-boundary-design-principles]] |
 | 开闭原则 | 如何让新增能力尽量通过扩展完成 | [[open-closed-principle]] |
@@ -89,7 +92,10 @@ updated: 2026-07-02
 | 目录 | 内容 |
 | --- | --- |
 | `architecture/` | 架构观、AI 时代的设计尺度、机器可理解的软件系统、边界、抽象 |
+| `agile/` | 敏捷价值、迭代交付、反馈、度量及 Scrum/Kanban/XP 的适用边界 |
+| `computer-science/` | 计算机基础学科地图、学习顺序，以及与软件工程和 AI 的关系 |
 | `design-principles/` | SOLID、DRY、KISS、YAGNI、组合、关注点分离、Fail Fast、Measure First、Least Privilege，以及 SRP/OCP/LSP/ISP/DIP 和模块边界设计 |
+| `engineering/` | 软件工程生命周期、Monorepo、数学建模等工程组织和建模概念 |
 | `oop/` | 结构体、对象、类、接口、抽象类、封装、继承、多态 |
 | `data/` | 数据库基础、SQL、ORM、schema、表、列、行、键、约束、索引、事务、OLTP/OLAP |
 | `data/databases/` | MySQL、PostgreSQL、Redis、ClickHouse 等具体数据库 |
