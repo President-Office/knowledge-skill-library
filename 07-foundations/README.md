@@ -15,6 +15,7 @@ updated: 2026-11-01
 
 | 层次 | 关注问题 | 笔记 |
 | --- | --- | --- |
+| 语言学 | 如何区分语言亲缘谱系、语言类型和接触影响 | [[07-foundations/linguistics/language-family-trees]] |
 | 工程思想 | 如何判断代码和模块是否容易变化、扩展、测试 | [[solid]]、[[dry]]、[[kiss]]、[[yagni]] |
 | 计算机基础 | 软件系统依赖哪些计算、程序、操作系统、网络、数据与安全基础 | [[07-foundations/computer-science/README]] |
 | 软件工程 | 如何把需求转化为可验证、可交付、可运行和可维护的软件 | [[07-foundations/engineering/software-engineering]] |
@@ -91,6 +92,7 @@ updated: 2026-11-01
 
 | 目录 | 内容 |
 | --- | --- |
+| `linguistics/` | 语言分类、语系谱系及相关基础概念 |
 | `architecture/` | 架构观、AI 时代的设计尺度、机器可理解的软件系统、边界、抽象 |
 | `agile/` | 敏捷价值、迭代交付、反馈、度量及 Scrum/Kanban/XP 的适用边界 |
 | `computer-science/` | 计算机基础学科地图、学习顺序，以及与软件工程和 AI 的关系 |
